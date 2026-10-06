@@ -54,7 +54,7 @@ https://github.com/konstantinkhizanov/resource-timer-ogame/blob/main/PRIVACY.md
 
 ## Screenshots
 Chrome: 1280×800 or 640×400 PNG/JPEG, 1–5 images. Firefox: any size. App Store: macOS 1280×800 / 1440×900 / 2560×1600 / 2880×1800.
-Suggested: (1) details panel with the line, (2) tooltip open with a missing resource, (3) shipyard with quantity ×10.
+Ready: store/screenshots/screenshot-1..3.png (1280×800) and promo-tile-440x280.png (Chrome small promo tile). Re-render with tools/screenshots/render.sh.
 
 ## Icons
 store/icon-512.png, store/icon-1024.png (App Store), extension/icons/icon-128.png (Chrome)

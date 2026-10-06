@@ -44,6 +44,7 @@ extension/        the extension itself (shared by all browsers)
 safari/           Xcode project wrapping the extension for Safari
 tools/build.sh    builds dist/*-chrome.zip and dist/*-firefox.zip; --safari also builds the Safari app
 tools/make-icons.swift   renders the icons
+tools/screenshots/       store screenshots and promo tile (render.sh → store/screenshots/)
 store/            store listing texts and icons
 ```
 
