@@ -22,6 +22,9 @@ I built this for myself, and OGame got so much better once I always knew exactly
 
 ## Support
 
+Found a bug or have an idea? [Open an issue](https://github.com/konstantinkhizanov/resource-timer-ogame/issues).
+
+
 The extension is free. If it saves you time, you can buy me a coffee: **DONATION_LINK**
 
 ## Development

@@ -36,7 +36,7 @@ SAFE AND LIGHT
 • Runs only on OGame game pages
 
 FREE, FOREVER
-Resource Timer is free and open source. If it saves you time (it will), you can buy me a coffee: DONATION_LINK — it keeps the updates coming.
+Resource Timer is free and open source (github.com/konstantinkhizanov/resource-timer-ogame). If it saves you time (it will), you can buy me a coffee: DONATION_LINK — it keeps the updates coming.
 
 Unofficial fan project. Not affiliated with or endorsed by Gameforge. OGame is a trademark of Gameforge 4D GmbH.
 
@@ -49,7 +49,7 @@ Single purpose: show the time until enough resources are accumulated to build an
 Data usage: does not collect any user data.
 
 ## Privacy policy URL
-Link to PRIVACY.md on GitHub (raw or rendered).
+https://github.com/konstantinkhizanov/resource-timer-ogame/blob/main/PRIVACY.md
 
 ## Screenshots
 Chrome: 1280×800 or 640×400 PNG/JPEG, 1–5 images. Firefox: any size. App Store: macOS 1280×800 / 1440×900 / 2560×1600 / 2880×1800.

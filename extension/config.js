@@ -6,4 +6,4 @@ var OGW_DONATE = {
 };
 
 // Project page on GitHub (source code and bug reports).
-var OGW_REPO_URL = 'https://github.com/GITHUB_USER/resource-timer-ogame';
+var OGW_REPO_URL = 'https://github.com/konstantinkhizanov/resource-timer-ogame';
