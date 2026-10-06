@@ -4,10 +4,10 @@ var OGW_DONATE = {
   paypal: 'https://paypal.me/PAYPAL_NAME',   // direct PayPal
   // Crypto wallets; ones with an empty address are hidden (the whole block if all are empty).
   crypto: [
-    { coin: 'USDT', network: 'TRON (TRC20)', address: '' },
-    { coin: 'Bitcoin', network: 'Bitcoin', address: '' },
-    { coin: 'Ethereum', network: 'Ethereum (ERC20)', address: '' },
-    { coin: 'TON', network: 'TON', address: '' }
+    { coin: 'USDT', network: 'TRON (TRC20)', address: 'USDT_TRC20_ADDRESS' },
+    { coin: 'Bitcoin', network: 'Bitcoin', address: 'BITCOIN_ADDRESS' },
+    { coin: 'Ethereum', network: 'Ethereum (ERC20)', address: 'ETHEREUM_ADDRESS' },
+    { coin: 'TON', network: 'TON', address: 'TON_ADDRESS' }
   ]
 };
 
