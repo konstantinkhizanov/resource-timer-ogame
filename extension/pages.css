@@ -5,7 +5,7 @@
   --border: #2c3a4b;
   --text: #a9b3bd;
   --strong: #ffffff;
-  --accent: #ff9600;
+  --accent: #8fd14f;
   --link: #6f9fd8;
   --ok: #99cc00;
 }
@@ -38,18 +38,23 @@ select {
   border-radius: 4px;
   font: inherit;
 }
+/* Styled after OGame's green "Improve" / "Research" button */
 .support-btn {
   display: block;
   text-align: center;
-  padding: 9px 12px;
+  padding: 10px 12px;
   border-radius: 5px;
-  border: 1px solid #b86b00;
-  background: linear-gradient(#ffad33, #e07f00);
-  color: #1a1200;
+  border: 1px solid #1f4a08;
+  background: linear-gradient(#9be04f 0%, #6cbf2a 48%, #4f9e17 52%, #3c8410 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.45), inset 0 -2px 0 rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 15px;
   font-weight: bold;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
   text-decoration: none;
 }
-.support-btn:hover { background: linear-gradient(#ffbe5c, #f08a00); }
+.support-btn:hover { background: linear-gradient(#a9ea5f 0%, #78cc34 48%, #5aab1e 52%, #469214 100%); }
+.support-btn:active { box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4); }
 .note { font-size: 11px; }
 .muted { font-size: 10px; color: #6b7682; }
 .hl { color: var(--ok); font-weight: bold; white-space: nowrap; }

@@ -7,98 +7,98 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		68F2AF1A3075956C00115A3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F2AF193075956C00115A3B /* AppDelegate.swift */; };
-		68F2AF1C3075956C00115A3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F2AF1B3075956C00115A3B /* SceneDelegate.swift */; };
-		68F2AF1F3075956C00115A3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF1D3075956C00115A3B /* LaunchScreen.storyboard */; };
-		68F2AF223075956C00115A3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF203075956C00115A3B /* Main.storyboard */; };
-		68F2AF2B3075956C00115A3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F2AF2A3075956C00115A3B /* AppDelegate.swift */; };
-		68F2AF2E3075956C00115A3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF2C3075956C00115A3B /* Main.storyboard */; };
-		68F2AF353075956C00115A3B /* Resource Timer for OGame Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 68F2AF343075956C00115A3B /* Resource Timer for OGame Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		68F2AF3F3075956C00115A3B /* Resource Timer for OGame Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 68F2AF3E3075956C00115A3B /* Resource Timer for OGame Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		68F2AF443075956C00115A3B /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF093075956B00115A3B /* Main.html */; };
-		68F2AF453075956C00115A3B /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF093075956B00115A3B /* Main.html */; };
-		68F2AF463075956C00115A3B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF0B3075956B00115A3B /* Icon.png */; };
-		68F2AF473075956C00115A3B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF0B3075956B00115A3B /* Icon.png */; };
-		68F2AF483075956C00115A3B /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF0C3075956B00115A3B /* Style.css */; };
-		68F2AF493075956C00115A3B /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF0C3075956B00115A3B /* Style.css */; };
-		68F2AF4A3075956C00115A3B /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF0D3075956B00115A3B /* Script.js */; };
-		68F2AF4B3075956C00115A3B /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF0D3075956B00115A3B /* Script.js */; };
-		68F2AF4C3075956C00115A3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F2AF0E3075956B00115A3B /* ViewController.swift */; };
-		68F2AF4D3075956C00115A3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F2AF0E3075956B00115A3B /* ViewController.swift */; };
-		68F2AF4E3075956C00115A3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF0F3075956C00115A3B /* Assets.xcassets */; };
-		68F2AF4F3075956C00115A3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF0F3075956C00115A3B /* Assets.xcassets */; };
-		68F2AF503075956C00115A3B /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F2AF113075956C00115A3B /* SafariWebExtensionHandler.swift */; };
-		68F2AF513075956C00115A3B /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F2AF113075956C00115A3B /* SafariWebExtensionHandler.swift */; };
-		68F2AF733075956C00115A3B /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF633075956C00115A3B /* popup.js */; };
-		68F2AF743075956C00115A3B /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF643075956C00115A3B /* styles.css */; };
-		68F2AF753075956C00115A3B /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF653075956C00115A3B /* background.js */; };
-		68F2AF763075956C00115A3B /* support.html in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF663075956C00115A3B /* support.html */; };
-		68F2AF773075956C00115A3B /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF673075956C00115A3B /* popup.html */; };
-		68F2AF783075956C00115A3B /* config.js in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF683075956C00115A3B /* config.js */; };
-		68F2AF793075956C00115A3B /* support.js in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF693075956C00115A3B /* support.js */; };
-		68F2AF7A3075956C00115A3B /* ui-strings.js in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF6A3075956C00115A3B /* ui-strings.js */; };
-		68F2AF7B3075956C00115A3B /* welcome.js in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF6B3075956C00115A3B /* welcome.js */; };
-		68F2AF7C3075956C00115A3B /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF6C3075956C00115A3B /* icons */; };
-		68F2AF7D3075956C00115A3B /* welcome.html in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF6D3075956C00115A3B /* welcome.html */; };
-		68F2AF7E3075956C00115A3B /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF6E3075956C00115A3B /* manifest.json */; };
-		68F2AF7F3075956C00115A3B /* pages.css in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF6F3075956C00115A3B /* pages.css */; };
-		68F2AF803075956C00115A3B /* inject.js in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF703075956C00115A3B /* inject.js */; };
-		68F2AF813075956C00115A3B /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF713075956C00115A3B /* content.js */; };
-		68F2AF823075956C00115A3B /* i18n.js in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF723075956C00115A3B /* i18n.js */; };
-		68F2AF833075956C00115A3B /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF633075956C00115A3B /* popup.js */; };
-		68F2AF843075956C00115A3B /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF643075956C00115A3B /* styles.css */; };
-		68F2AF853075956C00115A3B /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF653075956C00115A3B /* background.js */; };
-		68F2AF863075956C00115A3B /* support.html in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF663075956C00115A3B /* support.html */; };
-		68F2AF873075956C00115A3B /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF673075956C00115A3B /* popup.html */; };
-		68F2AF883075956C00115A3B /* config.js in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF683075956C00115A3B /* config.js */; };
-		68F2AF893075956C00115A3B /* support.js in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF693075956C00115A3B /* support.js */; };
-		68F2AF8A3075956C00115A3B /* ui-strings.js in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF6A3075956C00115A3B /* ui-strings.js */; };
-		68F2AF8B3075956C00115A3B /* welcome.js in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF6B3075956C00115A3B /* welcome.js */; };
-		68F2AF8C3075956C00115A3B /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF6C3075956C00115A3B /* icons */; };
-		68F2AF8D3075956C00115A3B /* welcome.html in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF6D3075956C00115A3B /* welcome.html */; };
-		68F2AF8E3075956C00115A3B /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF6E3075956C00115A3B /* manifest.json */; };
-		68F2AF8F3075956C00115A3B /* pages.css in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF6F3075956C00115A3B /* pages.css */; };
-		68F2AF903075956C00115A3B /* inject.js in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF703075956C00115A3B /* inject.js */; };
-		68F2AF913075956C00115A3B /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF713075956C00115A3B /* content.js */; };
-		68F2AF923075956C00115A3B /* i18n.js in Resources */ = {isa = PBXBuildFile; fileRef = 68F2AF723075956C00115A3B /* i18n.js */; };
+		68AF4FD130759AE500F74186 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF4FD030759AE500F74186 /* AppDelegate.swift */; };
+		68AF4FD330759AE500F74186 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF4FD230759AE500F74186 /* SceneDelegate.swift */; };
+		68AF4FD630759AE500F74186 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68AF4FD430759AE500F74186 /* LaunchScreen.storyboard */; };
+		68AF4FD930759AE500F74186 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68AF4FD730759AE500F74186 /* Main.storyboard */; };
+		68AF4FE230759AE500F74186 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF4FE130759AE500F74186 /* AppDelegate.swift */; };
+		68AF4FE530759AE500F74186 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68AF4FE330759AE500F74186 /* Main.storyboard */; };
+		68AF4FEC30759AE500F74186 /* Resource Timer for OGame Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 68AF4FEB30759AE500F74186 /* Resource Timer for OGame Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		68AF4FF630759AE500F74186 /* Resource Timer for OGame Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 68AF4FF530759AE500F74186 /* Resource Timer for OGame Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		68AF4FFB30759AE500F74186 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 68AF4FC030759AE400F74186 /* Main.html */; };
+		68AF4FFC30759AE500F74186 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 68AF4FC030759AE400F74186 /* Main.html */; };
+		68AF4FFD30759AE500F74186 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 68AF4FC230759AE400F74186 /* Icon.png */; };
+		68AF4FFE30759AE500F74186 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 68AF4FC230759AE400F74186 /* Icon.png */; };
+		68AF4FFF30759AE500F74186 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 68AF4FC330759AE400F74186 /* Style.css */; };
+		68AF500030759AE500F74186 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 68AF4FC330759AE400F74186 /* Style.css */; };
+		68AF500130759AE500F74186 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 68AF4FC430759AE400F74186 /* Script.js */; };
+		68AF500230759AE500F74186 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 68AF4FC430759AE400F74186 /* Script.js */; };
+		68AF500330759AE500F74186 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF4FC530759AE400F74186 /* ViewController.swift */; };
+		68AF500430759AE500F74186 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF4FC530759AE400F74186 /* ViewController.swift */; };
+		68AF500530759AE500F74186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68AF4FC630759AE500F74186 /* Assets.xcassets */; };
+		68AF500630759AE500F74186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68AF4FC630759AE500F74186 /* Assets.xcassets */; };
+		68AF500730759AE500F74186 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF4FC830759AE500F74186 /* SafariWebExtensionHandler.swift */; };
+		68AF500830759AE500F74186 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF4FC830759AE500F74186 /* SafariWebExtensionHandler.swift */; };
+		68AF502A30759AE600F74186 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 68AF501A30759AE600F74186 /* popup.js */; };
+		68AF502B30759AE600F74186 /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = 68AF501B30759AE600F74186 /* styles.css */; };
+		68AF502C30759AE600F74186 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 68AF501C30759AE600F74186 /* background.js */; };
+		68AF502D30759AE600F74186 /* support.html in Resources */ = {isa = PBXBuildFile; fileRef = 68AF501D30759AE600F74186 /* support.html */; };
+		68AF502E30759AE600F74186 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 68AF501E30759AE600F74186 /* popup.html */; };
+		68AF502F30759AE600F74186 /* config.js in Resources */ = {isa = PBXBuildFile; fileRef = 68AF501F30759AE600F74186 /* config.js */; };
+		68AF503030759AE600F74186 /* support.js in Resources */ = {isa = PBXBuildFile; fileRef = 68AF502030759AE600F74186 /* support.js */; };
+		68AF503130759AE600F74186 /* ui-strings.js in Resources */ = {isa = PBXBuildFile; fileRef = 68AF502130759AE600F74186 /* ui-strings.js */; };
+		68AF503230759AE600F74186 /* welcome.js in Resources */ = {isa = PBXBuildFile; fileRef = 68AF502230759AE600F74186 /* welcome.js */; };
+		68AF503330759AE600F74186 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 68AF502330759AE600F74186 /* icons */; };
+		68AF503430759AE600F74186 /* welcome.html in Resources */ = {isa = PBXBuildFile; fileRef = 68AF502430759AE600F74186 /* welcome.html */; };
+		68AF503530759AE600F74186 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 68AF502530759AE600F74186 /* manifest.json */; };
+		68AF503630759AE600F74186 /* pages.css in Resources */ = {isa = PBXBuildFile; fileRef = 68AF502630759AE600F74186 /* pages.css */; };
+		68AF503730759AE600F74186 /* inject.js in Resources */ = {isa = PBXBuildFile; fileRef = 68AF502730759AE600F74186 /* inject.js */; };
+		68AF503830759AE600F74186 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 68AF502830759AE600F74186 /* content.js */; };
+		68AF503930759AE600F74186 /* i18n.js in Resources */ = {isa = PBXBuildFile; fileRef = 68AF502930759AE600F74186 /* i18n.js */; };
+		68AF503A30759AE600F74186 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 68AF501A30759AE600F74186 /* popup.js */; };
+		68AF503B30759AE600F74186 /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = 68AF501B30759AE600F74186 /* styles.css */; };
+		68AF503C30759AE600F74186 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 68AF501C30759AE600F74186 /* background.js */; };
+		68AF503D30759AE600F74186 /* support.html in Resources */ = {isa = PBXBuildFile; fileRef = 68AF501D30759AE600F74186 /* support.html */; };
+		68AF503E30759AE600F74186 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 68AF501E30759AE600F74186 /* popup.html */; };
+		68AF503F30759AE600F74186 /* config.js in Resources */ = {isa = PBXBuildFile; fileRef = 68AF501F30759AE600F74186 /* config.js */; };
+		68AF504030759AE600F74186 /* support.js in Resources */ = {isa = PBXBuildFile; fileRef = 68AF502030759AE600F74186 /* support.js */; };
+		68AF504130759AE600F74186 /* ui-strings.js in Resources */ = {isa = PBXBuildFile; fileRef = 68AF502130759AE600F74186 /* ui-strings.js */; };
+		68AF504230759AE600F74186 /* welcome.js in Resources */ = {isa = PBXBuildFile; fileRef = 68AF502230759AE600F74186 /* welcome.js */; };
+		68AF504330759AE600F74186 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 68AF502330759AE600F74186 /* icons */; };
+		68AF504430759AE600F74186 /* welcome.html in Resources */ = {isa = PBXBuildFile; fileRef = 68AF502430759AE600F74186 /* welcome.html */; };
+		68AF504530759AE600F74186 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 68AF502530759AE600F74186 /* manifest.json */; };
+		68AF504630759AE600F74186 /* pages.css in Resources */ = {isa = PBXBuildFile; fileRef = 68AF502630759AE600F74186 /* pages.css */; };
+		68AF504730759AE600F74186 /* inject.js in Resources */ = {isa = PBXBuildFile; fileRef = 68AF502730759AE600F74186 /* inject.js */; };
+		68AF504830759AE600F74186 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 68AF502830759AE600F74186 /* content.js */; };
+		68AF504930759AE600F74186 /* i18n.js in Resources */ = {isa = PBXBuildFile; fileRef = 68AF502930759AE600F74186 /* i18n.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		68F2AF363075956C00115A3B /* PBXContainerItemProxy */ = {
+		68AF4FED30759AE500F74186 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 68F2AF033075956B00115A3B /* Project object */;
+			containerPortal = 68AF4FBA30759AE400F74186 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 68F2AF333075956C00115A3B;
+			remoteGlobalIDString = 68AF4FEA30759AE500F74186;
 			remoteInfo = "Resource Timer for OGame Extension (iOS)";
 		};
-		68F2AF403075956C00115A3B /* PBXContainerItemProxy */ = {
+		68AF4FF730759AE500F74186 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 68F2AF033075956B00115A3B /* Project object */;
+			containerPortal = 68AF4FBA30759AE400F74186 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 68F2AF3D3075956C00115A3B;
+			remoteGlobalIDString = 68AF4FF430759AE500F74186;
 			remoteInfo = "Resource Timer for OGame Extension (macOS)";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		68F2AF573075956C00115A3B /* Embed Foundation Extensions */ = {
+		68AF500E30759AE500F74186 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				68F2AF353075956C00115A3B /* Resource Timer for OGame Extension.appex in Embed Foundation Extensions */,
+				68AF4FEC30759AE500F74186 /* Resource Timer for OGame Extension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		68F2AF5E3075956C00115A3B /* Embed Foundation Extensions */ = {
+		68AF501530759AE500F74186 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				68F2AF3F3075956C00115A3B /* Resource Timer for OGame Extension.appex in Embed Foundation Extensions */,
+				68AF4FF630759AE500F74186 /* Resource Timer for OGame Extension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,68 +106,68 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		68F2AF0A3075956B00115A3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
-		68F2AF0B3075956B00115A3B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		68F2AF0C3075956B00115A3B /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
-		68F2AF0D3075956B00115A3B /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
-		68F2AF0E3075956B00115A3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		68F2AF0F3075956C00115A3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		68F2AF113075956C00115A3B /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
-		68F2AF163075956C00115A3B /* Resource Timer for OGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Resource Timer for OGame.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		68F2AF193075956C00115A3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		68F2AF1B3075956C00115A3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		68F2AF1E3075956C00115A3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		68F2AF213075956C00115A3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		68F2AF233075956C00115A3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		68F2AF283075956C00115A3B /* Resource Timer for OGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Resource Timer for OGame.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		68F2AF2A3075956C00115A3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		68F2AF2D3075956C00115A3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		68F2AF2F3075956C00115A3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		68F2AF343075956C00115A3B /* Resource Timer for OGame Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Resource Timer for OGame Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		68F2AF393075956C00115A3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		68F2AF3E3075956C00115A3B /* Resource Timer for OGame Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Resource Timer for OGame Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		68F2AF433075956C00115A3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		68F2AF633075956C00115A3B /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popup.js; path = ../../../extension/popup.js; sourceTree = "<group>"; };
-		68F2AF643075956C00115A3B /* styles.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = styles.css; path = ../../../extension/styles.css; sourceTree = "<group>"; };
-		68F2AF653075956C00115A3B /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = ../../../extension/background.js; sourceTree = "<group>"; };
-		68F2AF663075956C00115A3B /* support.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = support.html; path = ../../../extension/support.html; sourceTree = "<group>"; };
-		68F2AF673075956C00115A3B /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = ../../../extension/popup.html; sourceTree = "<group>"; };
-		68F2AF683075956C00115A3B /* config.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = config.js; path = ../../../extension/config.js; sourceTree = "<group>"; };
-		68F2AF693075956C00115A3B /* support.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = support.js; path = ../../../extension/support.js; sourceTree = "<group>"; };
-		68F2AF6A3075956C00115A3B /* ui-strings.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "ui-strings.js"; path = "../../../extension/ui-strings.js"; sourceTree = "<group>"; };
-		68F2AF6B3075956C00115A3B /* welcome.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = welcome.js; path = ../../../extension/welcome.js; sourceTree = "<group>"; };
-		68F2AF6C3075956C00115A3B /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = ../../../extension/icons; sourceTree = "<group>"; };
-		68F2AF6D3075956C00115A3B /* welcome.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = welcome.html; path = ../../../extension/welcome.html; sourceTree = "<group>"; };
-		68F2AF6E3075956C00115A3B /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../../extension/manifest.json; sourceTree = "<group>"; };
-		68F2AF6F3075956C00115A3B /* pages.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = pages.css; path = ../../../extension/pages.css; sourceTree = "<group>"; };
-		68F2AF703075956C00115A3B /* inject.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = inject.js; path = ../../../extension/inject.js; sourceTree = "<group>"; };
-		68F2AF713075956C00115A3B /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = ../../../extension/content.js; sourceTree = "<group>"; };
-		68F2AF723075956C00115A3B /* i18n.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = i18n.js; path = ../../../extension/i18n.js; sourceTree = "<group>"; };
+		68AF4FC130759AE400F74186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		68AF4FC230759AE400F74186 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		68AF4FC330759AE400F74186 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		68AF4FC430759AE400F74186 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		68AF4FC530759AE400F74186 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		68AF4FC630759AE500F74186 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68AF4FC830759AE500F74186 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		68AF4FCD30759AE500F74186 /* Resource Timer for OGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Resource Timer for OGame.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68AF4FD030759AE500F74186 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		68AF4FD230759AE500F74186 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		68AF4FD530759AE500F74186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		68AF4FD830759AE500F74186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		68AF4FDA30759AE500F74186 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68AF4FDF30759AE500F74186 /* Resource Timer for OGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Resource Timer for OGame.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68AF4FE130759AE500F74186 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		68AF4FE430759AE500F74186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		68AF4FE630759AE500F74186 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68AF4FEB30759AE500F74186 /* Resource Timer for OGame Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Resource Timer for OGame Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68AF4FF030759AE500F74186 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68AF4FF530759AE500F74186 /* Resource Timer for OGame Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Resource Timer for OGame Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68AF4FFA30759AE500F74186 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68AF501A30759AE600F74186 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popup.js; path = ../../../extension/popup.js; sourceTree = "<group>"; };
+		68AF501B30759AE600F74186 /* styles.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = styles.css; path = ../../../extension/styles.css; sourceTree = "<group>"; };
+		68AF501C30759AE600F74186 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = ../../../extension/background.js; sourceTree = "<group>"; };
+		68AF501D30759AE600F74186 /* support.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = support.html; path = ../../../extension/support.html; sourceTree = "<group>"; };
+		68AF501E30759AE600F74186 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = ../../../extension/popup.html; sourceTree = "<group>"; };
+		68AF501F30759AE600F74186 /* config.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = config.js; path = ../../../extension/config.js; sourceTree = "<group>"; };
+		68AF502030759AE600F74186 /* support.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = support.js; path = ../../../extension/support.js; sourceTree = "<group>"; };
+		68AF502130759AE600F74186 /* ui-strings.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "ui-strings.js"; path = "../../../extension/ui-strings.js"; sourceTree = "<group>"; };
+		68AF502230759AE600F74186 /* welcome.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = welcome.js; path = ../../../extension/welcome.js; sourceTree = "<group>"; };
+		68AF502330759AE600F74186 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = ../../../extension/icons; sourceTree = "<group>"; };
+		68AF502430759AE600F74186 /* welcome.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = welcome.html; path = ../../../extension/welcome.html; sourceTree = "<group>"; };
+		68AF502530759AE600F74186 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../../extension/manifest.json; sourceTree = "<group>"; };
+		68AF502630759AE600F74186 /* pages.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = pages.css; path = ../../../extension/pages.css; sourceTree = "<group>"; };
+		68AF502730759AE600F74186 /* inject.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = inject.js; path = ../../../extension/inject.js; sourceTree = "<group>"; };
+		68AF502830759AE600F74186 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = ../../../extension/content.js; sourceTree = "<group>"; };
+		68AF502930759AE600F74186 /* i18n.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = i18n.js; path = ../../../extension/i18n.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		68F2AF133075956C00115A3B /* Frameworks */ = {
+		68AF4FCA30759AE500F74186 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		68F2AF253075956C00115A3B /* Frameworks */ = {
+		68AF4FDC30759AE500F74186 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		68F2AF313075956C00115A3B /* Frameworks */ = {
+		68AF4FE830759AE500F74186 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		68F2AF3B3075956C00115A3B /* Frameworks */ = {
+		68AF4FF230759AE500F74186 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -177,117 +177,117 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		68F2AF023075956B00115A3B = {
+		68AF4FB930759AE400F74186 = {
 			isa = PBXGroup;
 			children = (
-				68F2AF073075956B00115A3B /* Shared (App) */,
-				68F2AF103075956C00115A3B /* Shared (Extension) */,
-				68F2AF183075956C00115A3B /* iOS (App) */,
-				68F2AF293075956C00115A3B /* macOS (App) */,
-				68F2AF383075956C00115A3B /* iOS (Extension) */,
-				68F2AF423075956C00115A3B /* macOS (Extension) */,
-				68F2AF173075956C00115A3B /* Products */,
+				68AF4FBE30759AE400F74186 /* Shared (App) */,
+				68AF4FC730759AE500F74186 /* Shared (Extension) */,
+				68AF4FCF30759AE500F74186 /* iOS (App) */,
+				68AF4FE030759AE500F74186 /* macOS (App) */,
+				68AF4FEF30759AE500F74186 /* iOS (Extension) */,
+				68AF4FF930759AE500F74186 /* macOS (Extension) */,
+				68AF4FCE30759AE500F74186 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		68F2AF073075956B00115A3B /* Shared (App) */ = {
+		68AF4FBE30759AE400F74186 /* Shared (App) */ = {
 			isa = PBXGroup;
 			children = (
-				68F2AF0E3075956B00115A3B /* ViewController.swift */,
-				68F2AF0F3075956C00115A3B /* Assets.xcassets */,
-				68F2AF083075956B00115A3B /* Resources */,
+				68AF4FC530759AE400F74186 /* ViewController.swift */,
+				68AF4FC630759AE500F74186 /* Assets.xcassets */,
+				68AF4FBF30759AE400F74186 /* Resources */,
 			);
 			path = "Shared (App)";
 			sourceTree = "<group>";
 		};
-		68F2AF083075956B00115A3B /* Resources */ = {
+		68AF4FBF30759AE400F74186 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				68F2AF093075956B00115A3B /* Main.html */,
-				68F2AF0B3075956B00115A3B /* Icon.png */,
-				68F2AF0C3075956B00115A3B /* Style.css */,
-				68F2AF0D3075956B00115A3B /* Script.js */,
+				68AF4FC030759AE400F74186 /* Main.html */,
+				68AF4FC230759AE400F74186 /* Icon.png */,
+				68AF4FC330759AE400F74186 /* Style.css */,
+				68AF4FC430759AE400F74186 /* Script.js */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		68F2AF103075956C00115A3B /* Shared (Extension) */ = {
+		68AF4FC730759AE500F74186 /* Shared (Extension) */ = {
 			isa = PBXGroup;
 			children = (
-				68F2AF623075956C00115A3B /* Resources */,
-				68F2AF113075956C00115A3B /* SafariWebExtensionHandler.swift */,
+				68AF501930759AE600F74186 /* Resources */,
+				68AF4FC830759AE500F74186 /* SafariWebExtensionHandler.swift */,
 			);
 			path = "Shared (Extension)";
 			sourceTree = "<group>";
 		};
-		68F2AF173075956C00115A3B /* Products */ = {
+		68AF4FCE30759AE500F74186 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				68F2AF163075956C00115A3B /* Resource Timer for OGame.app */,
-				68F2AF283075956C00115A3B /* Resource Timer for OGame.app */,
-				68F2AF343075956C00115A3B /* Resource Timer for OGame Extension.appex */,
-				68F2AF3E3075956C00115A3B /* Resource Timer for OGame Extension.appex */,
+				68AF4FCD30759AE500F74186 /* Resource Timer for OGame.app */,
+				68AF4FDF30759AE500F74186 /* Resource Timer for OGame.app */,
+				68AF4FEB30759AE500F74186 /* Resource Timer for OGame Extension.appex */,
+				68AF4FF530759AE500F74186 /* Resource Timer for OGame Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		68F2AF183075956C00115A3B /* iOS (App) */ = {
+		68AF4FCF30759AE500F74186 /* iOS (App) */ = {
 			isa = PBXGroup;
 			children = (
-				68F2AF193075956C00115A3B /* AppDelegate.swift */,
-				68F2AF1B3075956C00115A3B /* SceneDelegate.swift */,
-				68F2AF1D3075956C00115A3B /* LaunchScreen.storyboard */,
-				68F2AF203075956C00115A3B /* Main.storyboard */,
-				68F2AF233075956C00115A3B /* Info.plist */,
+				68AF4FD030759AE500F74186 /* AppDelegate.swift */,
+				68AF4FD230759AE500F74186 /* SceneDelegate.swift */,
+				68AF4FD430759AE500F74186 /* LaunchScreen.storyboard */,
+				68AF4FD730759AE500F74186 /* Main.storyboard */,
+				68AF4FDA30759AE500F74186 /* Info.plist */,
 			);
 			path = "iOS (App)";
 			sourceTree = "<group>";
 		};
-		68F2AF293075956C00115A3B /* macOS (App) */ = {
+		68AF4FE030759AE500F74186 /* macOS (App) */ = {
 			isa = PBXGroup;
 			children = (
-				68F2AF2A3075956C00115A3B /* AppDelegate.swift */,
-				68F2AF2C3075956C00115A3B /* Main.storyboard */,
-				68F2AF2F3075956C00115A3B /* Info.plist */,
+				68AF4FE130759AE500F74186 /* AppDelegate.swift */,
+				68AF4FE330759AE500F74186 /* Main.storyboard */,
+				68AF4FE630759AE500F74186 /* Info.plist */,
 			);
 			path = "macOS (App)";
 			sourceTree = "<group>";
 		};
-		68F2AF383075956C00115A3B /* iOS (Extension) */ = {
+		68AF4FEF30759AE500F74186 /* iOS (Extension) */ = {
 			isa = PBXGroup;
 			children = (
-				68F2AF393075956C00115A3B /* Info.plist */,
+				68AF4FF030759AE500F74186 /* Info.plist */,
 			);
 			path = "iOS (Extension)";
 			sourceTree = "<group>";
 		};
-		68F2AF423075956C00115A3B /* macOS (Extension) */ = {
+		68AF4FF930759AE500F74186 /* macOS (Extension) */ = {
 			isa = PBXGroup;
 			children = (
-				68F2AF433075956C00115A3B /* Info.plist */,
+				68AF4FFA30759AE500F74186 /* Info.plist */,
 			);
 			path = "macOS (Extension)";
 			sourceTree = "<group>";
 		};
-		68F2AF623075956C00115A3B /* Resources */ = {
+		68AF501930759AE600F74186 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				68F2AF633075956C00115A3B /* popup.js */,
-				68F2AF643075956C00115A3B /* styles.css */,
-				68F2AF653075956C00115A3B /* background.js */,
-				68F2AF663075956C00115A3B /* support.html */,
-				68F2AF673075956C00115A3B /* popup.html */,
-				68F2AF683075956C00115A3B /* config.js */,
-				68F2AF693075956C00115A3B /* support.js */,
-				68F2AF6A3075956C00115A3B /* ui-strings.js */,
-				68F2AF6B3075956C00115A3B /* welcome.js */,
-				68F2AF6C3075956C00115A3B /* icons */,
-				68F2AF6D3075956C00115A3B /* welcome.html */,
-				68F2AF6E3075956C00115A3B /* manifest.json */,
-				68F2AF6F3075956C00115A3B /* pages.css */,
-				68F2AF703075956C00115A3B /* inject.js */,
-				68F2AF713075956C00115A3B /* content.js */,
-				68F2AF723075956C00115A3B /* i18n.js */,
+				68AF501A30759AE600F74186 /* popup.js */,
+				68AF501B30759AE600F74186 /* styles.css */,
+				68AF501C30759AE600F74186 /* background.js */,
+				68AF501D30759AE600F74186 /* support.html */,
+				68AF501E30759AE600F74186 /* popup.html */,
+				68AF501F30759AE600F74186 /* config.js */,
+				68AF502030759AE600F74186 /* support.js */,
+				68AF502130759AE600F74186 /* ui-strings.js */,
+				68AF502230759AE600F74186 /* welcome.js */,
+				68AF502330759AE600F74186 /* icons */,
+				68AF502430759AE600F74186 /* welcome.html */,
+				68AF502530759AE600F74186 /* manifest.json */,
+				68AF502630759AE600F74186 /* pages.css */,
+				68AF502730759AE600F74186 /* inject.js */,
+				68AF502830759AE600F74186 /* content.js */,
+				68AF502930759AE600F74186 /* i18n.js */,
 			);
 			name = Resources;
 			path = "Shared (Extension)";
@@ -296,55 +296,55 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		68F2AF153075956C00115A3B /* Resource Timer for OGame (iOS) */ = {
+		68AF4FCC30759AE500F74186 /* Resource Timer for OGame (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 68F2AF583075956C00115A3B /* Build configuration list for PBXNativeTarget "Resource Timer for OGame (iOS)" */;
+			buildConfigurationList = 68AF500F30759AE500F74186 /* Build configuration list for PBXNativeTarget "Resource Timer for OGame (iOS)" */;
 			buildPhases = (
-				68F2AF123075956C00115A3B /* Sources */,
-				68F2AF133075956C00115A3B /* Frameworks */,
-				68F2AF143075956C00115A3B /* Resources */,
-				68F2AF573075956C00115A3B /* Embed Foundation Extensions */,
+				68AF4FC930759AE500F74186 /* Sources */,
+				68AF4FCA30759AE500F74186 /* Frameworks */,
+				68AF4FCB30759AE500F74186 /* Resources */,
+				68AF500E30759AE500F74186 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				68F2AF373075956C00115A3B /* PBXTargetDependency */,
+				68AF4FEE30759AE500F74186 /* PBXTargetDependency */,
 			);
 			name = "Resource Timer for OGame (iOS)";
 			packageProductDependencies = (
 			);
 			productName = "Resource Timer for OGame (iOS)";
-			productReference = 68F2AF163075956C00115A3B /* Resource Timer for OGame.app */;
+			productReference = 68AF4FCD30759AE500F74186 /* Resource Timer for OGame.app */;
 			productType = "com.apple.product-type.application";
 		};
-		68F2AF273075956C00115A3B /* Resource Timer for OGame (macOS) */ = {
+		68AF4FDE30759AE500F74186 /* Resource Timer for OGame (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 68F2AF5F3075956C00115A3B /* Build configuration list for PBXNativeTarget "Resource Timer for OGame (macOS)" */;
+			buildConfigurationList = 68AF501630759AE500F74186 /* Build configuration list for PBXNativeTarget "Resource Timer for OGame (macOS)" */;
 			buildPhases = (
-				68F2AF243075956C00115A3B /* Sources */,
-				68F2AF253075956C00115A3B /* Frameworks */,
-				68F2AF263075956C00115A3B /* Resources */,
-				68F2AF5E3075956C00115A3B /* Embed Foundation Extensions */,
+				68AF4FDB30759AE500F74186 /* Sources */,
+				68AF4FDC30759AE500F74186 /* Frameworks */,
+				68AF4FDD30759AE500F74186 /* Resources */,
+				68AF501530759AE500F74186 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				68F2AF413075956C00115A3B /* PBXTargetDependency */,
+				68AF4FF830759AE500F74186 /* PBXTargetDependency */,
 			);
 			name = "Resource Timer for OGame (macOS)";
 			packageProductDependencies = (
 			);
 			productName = "Resource Timer for OGame (macOS)";
-			productReference = 68F2AF283075956C00115A3B /* Resource Timer for OGame.app */;
+			productReference = 68AF4FDF30759AE500F74186 /* Resource Timer for OGame.app */;
 			productType = "com.apple.product-type.application";
 		};
-		68F2AF333075956C00115A3B /* Resource Timer for OGame Extension (iOS) */ = {
+		68AF4FEA30759AE500F74186 /* Resource Timer for OGame Extension (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 68F2AF543075956C00115A3B /* Build configuration list for PBXNativeTarget "Resource Timer for OGame Extension (iOS)" */;
+			buildConfigurationList = 68AF500B30759AE500F74186 /* Build configuration list for PBXNativeTarget "Resource Timer for OGame Extension (iOS)" */;
 			buildPhases = (
-				68F2AF303075956C00115A3B /* Sources */,
-				68F2AF313075956C00115A3B /* Frameworks */,
-				68F2AF323075956C00115A3B /* Resources */,
+				68AF4FE730759AE500F74186 /* Sources */,
+				68AF4FE830759AE500F74186 /* Frameworks */,
+				68AF4FE930759AE500F74186 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -354,16 +354,16 @@
 			packageProductDependencies = (
 			);
 			productName = "Resource Timer for OGame Extension (iOS)";
-			productReference = 68F2AF343075956C00115A3B /* Resource Timer for OGame Extension.appex */;
+			productReference = 68AF4FEB30759AE500F74186 /* Resource Timer for OGame Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		68F2AF3D3075956C00115A3B /* Resource Timer for OGame Extension (macOS) */ = {
+		68AF4FF430759AE500F74186 /* Resource Timer for OGame Extension (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 68F2AF5B3075956C00115A3B /* Build configuration list for PBXNativeTarget "Resource Timer for OGame Extension (macOS)" */;
+			buildConfigurationList = 68AF501230759AE500F74186 /* Build configuration list for PBXNativeTarget "Resource Timer for OGame Extension (macOS)" */;
 			buildPhases = (
-				68F2AF3A3075956C00115A3B /* Sources */,
-				68F2AF3B3075956C00115A3B /* Frameworks */,
-				68F2AF3C3075956C00115A3B /* Resources */,
+				68AF4FF130759AE500F74186 /* Sources */,
+				68AF4FF230759AE500F74186 /* Frameworks */,
+				68AF4FF330759AE500F74186 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -373,211 +373,211 @@
 			packageProductDependencies = (
 			);
 			productName = "Resource Timer for OGame Extension (macOS)";
-			productReference = 68F2AF3E3075956C00115A3B /* Resource Timer for OGame Extension.appex */;
+			productReference = 68AF4FF530759AE500F74186 /* Resource Timer for OGame Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		68F2AF033075956B00115A3B /* Project object */ = {
+		68AF4FBA30759AE400F74186 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2610;
 				LastUpgradeCheck = 2610;
 				TargetAttributes = {
-					68F2AF153075956C00115A3B = {
+					68AF4FCC30759AE500F74186 = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
-					68F2AF273075956C00115A3B = {
+					68AF4FDE30759AE500F74186 = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
-					68F2AF333075956C00115A3B = {
+					68AF4FEA30759AE500F74186 = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
-					68F2AF3D3075956C00115A3B = {
+					68AF4FF430759AE500F74186 = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
 				};
 			};
-			buildConfigurationList = 68F2AF063075956B00115A3B /* Build configuration list for PBXProject "Resource Timer for OGame" */;
+			buildConfigurationList = 68AF4FBD30759AE400F74186 /* Build configuration list for PBXProject "Resource Timer for OGame" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 68F2AF023075956B00115A3B;
+			mainGroup = 68AF4FB930759AE400F74186;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 68F2AF173075956C00115A3B /* Products */;
+			productRefGroup = 68AF4FCE30759AE500F74186 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				68F2AF153075956C00115A3B /* Resource Timer for OGame (iOS) */,
-				68F2AF273075956C00115A3B /* Resource Timer for OGame (macOS) */,
-				68F2AF333075956C00115A3B /* Resource Timer for OGame Extension (iOS) */,
-				68F2AF3D3075956C00115A3B /* Resource Timer for OGame Extension (macOS) */,
+				68AF4FCC30759AE500F74186 /* Resource Timer for OGame (iOS) */,
+				68AF4FDE30759AE500F74186 /* Resource Timer for OGame (macOS) */,
+				68AF4FEA30759AE500F74186 /* Resource Timer for OGame Extension (iOS) */,
+				68AF4FF430759AE500F74186 /* Resource Timer for OGame Extension (macOS) */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		68F2AF143075956C00115A3B /* Resources */ = {
+		68AF4FCB30759AE500F74186 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68F2AF463075956C00115A3B /* Icon.png in Resources */,
-				68F2AF1F3075956C00115A3B /* LaunchScreen.storyboard in Resources */,
-				68F2AF443075956C00115A3B /* Main.html in Resources */,
-				68F2AF4A3075956C00115A3B /* Script.js in Resources */,
-				68F2AF4E3075956C00115A3B /* Assets.xcassets in Resources */,
-				68F2AF223075956C00115A3B /* Main.storyboard in Resources */,
-				68F2AF483075956C00115A3B /* Style.css in Resources */,
+				68AF4FFD30759AE500F74186 /* Icon.png in Resources */,
+				68AF4FD630759AE500F74186 /* LaunchScreen.storyboard in Resources */,
+				68AF4FFB30759AE500F74186 /* Main.html in Resources */,
+				68AF500130759AE500F74186 /* Script.js in Resources */,
+				68AF500530759AE500F74186 /* Assets.xcassets in Resources */,
+				68AF4FD930759AE500F74186 /* Main.storyboard in Resources */,
+				68AF4FFF30759AE500F74186 /* Style.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		68F2AF263075956C00115A3B /* Resources */ = {
+		68AF4FDD30759AE500F74186 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68F2AF473075956C00115A3B /* Icon.png in Resources */,
-				68F2AF493075956C00115A3B /* Style.css in Resources */,
-				68F2AF2E3075956C00115A3B /* Main.storyboard in Resources */,
-				68F2AF4B3075956C00115A3B /* Script.js in Resources */,
-				68F2AF4F3075956C00115A3B /* Assets.xcassets in Resources */,
-				68F2AF453075956C00115A3B /* Main.html in Resources */,
+				68AF4FFE30759AE500F74186 /* Icon.png in Resources */,
+				68AF500030759AE500F74186 /* Style.css in Resources */,
+				68AF4FE530759AE500F74186 /* Main.storyboard in Resources */,
+				68AF500230759AE500F74186 /* Script.js in Resources */,
+				68AF500630759AE500F74186 /* Assets.xcassets in Resources */,
+				68AF4FFC30759AE500F74186 /* Main.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		68F2AF323075956C00115A3B /* Resources */ = {
+		68AF4FE930759AE500F74186 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68F2AF893075956C00115A3B /* support.js in Resources */,
-				68F2AF883075956C00115A3B /* config.js in Resources */,
-				68F2AF923075956C00115A3B /* i18n.js in Resources */,
-				68F2AF863075956C00115A3B /* support.html in Resources */,
-				68F2AF903075956C00115A3B /* inject.js in Resources */,
-				68F2AF8C3075956C00115A3B /* icons in Resources */,
-				68F2AF8E3075956C00115A3B /* manifest.json in Resources */,
-				68F2AF8D3075956C00115A3B /* welcome.html in Resources */,
-				68F2AF873075956C00115A3B /* popup.html in Resources */,
-				68F2AF833075956C00115A3B /* popup.js in Resources */,
-				68F2AF913075956C00115A3B /* content.js in Resources */,
-				68F2AF8A3075956C00115A3B /* ui-strings.js in Resources */,
-				68F2AF8F3075956C00115A3B /* pages.css in Resources */,
-				68F2AF853075956C00115A3B /* background.js in Resources */,
-				68F2AF8B3075956C00115A3B /* welcome.js in Resources */,
-				68F2AF843075956C00115A3B /* styles.css in Resources */,
+				68AF504030759AE600F74186 /* support.js in Resources */,
+				68AF503F30759AE600F74186 /* config.js in Resources */,
+				68AF504930759AE600F74186 /* i18n.js in Resources */,
+				68AF503D30759AE600F74186 /* support.html in Resources */,
+				68AF504730759AE600F74186 /* inject.js in Resources */,
+				68AF504330759AE600F74186 /* icons in Resources */,
+				68AF504530759AE600F74186 /* manifest.json in Resources */,
+				68AF504430759AE600F74186 /* welcome.html in Resources */,
+				68AF503E30759AE600F74186 /* popup.html in Resources */,
+				68AF503A30759AE600F74186 /* popup.js in Resources */,
+				68AF504830759AE600F74186 /* content.js in Resources */,
+				68AF504130759AE600F74186 /* ui-strings.js in Resources */,
+				68AF504630759AE600F74186 /* pages.css in Resources */,
+				68AF503C30759AE600F74186 /* background.js in Resources */,
+				68AF504230759AE600F74186 /* welcome.js in Resources */,
+				68AF503B30759AE600F74186 /* styles.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		68F2AF3C3075956C00115A3B /* Resources */ = {
+		68AF4FF330759AE500F74186 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68F2AF793075956C00115A3B /* support.js in Resources */,
-				68F2AF783075956C00115A3B /* config.js in Resources */,
-				68F2AF823075956C00115A3B /* i18n.js in Resources */,
-				68F2AF763075956C00115A3B /* support.html in Resources */,
-				68F2AF803075956C00115A3B /* inject.js in Resources */,
-				68F2AF7C3075956C00115A3B /* icons in Resources */,
-				68F2AF7E3075956C00115A3B /* manifest.json in Resources */,
-				68F2AF7D3075956C00115A3B /* welcome.html in Resources */,
-				68F2AF773075956C00115A3B /* popup.html in Resources */,
-				68F2AF733075956C00115A3B /* popup.js in Resources */,
-				68F2AF813075956C00115A3B /* content.js in Resources */,
-				68F2AF7A3075956C00115A3B /* ui-strings.js in Resources */,
-				68F2AF7F3075956C00115A3B /* pages.css in Resources */,
-				68F2AF753075956C00115A3B /* background.js in Resources */,
-				68F2AF7B3075956C00115A3B /* welcome.js in Resources */,
-				68F2AF743075956C00115A3B /* styles.css in Resources */,
+				68AF503030759AE600F74186 /* support.js in Resources */,
+				68AF502F30759AE600F74186 /* config.js in Resources */,
+				68AF503930759AE600F74186 /* i18n.js in Resources */,
+				68AF502D30759AE600F74186 /* support.html in Resources */,
+				68AF503730759AE600F74186 /* inject.js in Resources */,
+				68AF503330759AE600F74186 /* icons in Resources */,
+				68AF503530759AE600F74186 /* manifest.json in Resources */,
+				68AF503430759AE600F74186 /* welcome.html in Resources */,
+				68AF502E30759AE600F74186 /* popup.html in Resources */,
+				68AF502A30759AE600F74186 /* popup.js in Resources */,
+				68AF503830759AE600F74186 /* content.js in Resources */,
+				68AF503130759AE600F74186 /* ui-strings.js in Resources */,
+				68AF503630759AE600F74186 /* pages.css in Resources */,
+				68AF502C30759AE600F74186 /* background.js in Resources */,
+				68AF503230759AE600F74186 /* welcome.js in Resources */,
+				68AF502B30759AE600F74186 /* styles.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		68F2AF123075956C00115A3B /* Sources */ = {
+		68AF4FC930759AE500F74186 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68F2AF4C3075956C00115A3B /* ViewController.swift in Sources */,
-				68F2AF1A3075956C00115A3B /* AppDelegate.swift in Sources */,
-				68F2AF1C3075956C00115A3B /* SceneDelegate.swift in Sources */,
+				68AF500330759AE500F74186 /* ViewController.swift in Sources */,
+				68AF4FD130759AE500F74186 /* AppDelegate.swift in Sources */,
+				68AF4FD330759AE500F74186 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		68F2AF243075956C00115A3B /* Sources */ = {
+		68AF4FDB30759AE500F74186 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68F2AF4D3075956C00115A3B /* ViewController.swift in Sources */,
-				68F2AF2B3075956C00115A3B /* AppDelegate.swift in Sources */,
+				68AF500430759AE500F74186 /* ViewController.swift in Sources */,
+				68AF4FE230759AE500F74186 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		68F2AF303075956C00115A3B /* Sources */ = {
+		68AF4FE730759AE500F74186 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68F2AF503075956C00115A3B /* SafariWebExtensionHandler.swift in Sources */,
+				68AF500730759AE500F74186 /* SafariWebExtensionHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		68F2AF3A3075956C00115A3B /* Sources */ = {
+		68AF4FF130759AE500F74186 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68F2AF513075956C00115A3B /* SafariWebExtensionHandler.swift in Sources */,
+				68AF500830759AE500F74186 /* SafariWebExtensionHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		68F2AF373075956C00115A3B /* PBXTargetDependency */ = {
+		68AF4FEE30759AE500F74186 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 68F2AF333075956C00115A3B /* Resource Timer for OGame Extension (iOS) */;
-			targetProxy = 68F2AF363075956C00115A3B /* PBXContainerItemProxy */;
+			target = 68AF4FEA30759AE500F74186 /* Resource Timer for OGame Extension (iOS) */;
+			targetProxy = 68AF4FED30759AE500F74186 /* PBXContainerItemProxy */;
 		};
-		68F2AF413075956C00115A3B /* PBXTargetDependency */ = {
+		68AF4FF830759AE500F74186 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 68F2AF3D3075956C00115A3B /* Resource Timer for OGame Extension (macOS) */;
-			targetProxy = 68F2AF403075956C00115A3B /* PBXContainerItemProxy */;
+			target = 68AF4FF430759AE500F74186 /* Resource Timer for OGame Extension (macOS) */;
+			targetProxy = 68AF4FF730759AE500F74186 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		68F2AF093075956B00115A3B /* Main.html */ = {
+		68AF4FC030759AE400F74186 /* Main.html */ = {
 			isa = PBXVariantGroup;
 			children = (
-				68F2AF0A3075956B00115A3B /* Base */,
+				68AF4FC130759AE400F74186 /* Base */,
 			);
 			name = Main.html;
 			sourceTree = "<group>";
 		};
-		68F2AF1D3075956C00115A3B /* LaunchScreen.storyboard */ = {
+		68AF4FD430759AE500F74186 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				68F2AF1E3075956C00115A3B /* Base */,
+				68AF4FD530759AE500F74186 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		68F2AF203075956C00115A3B /* Main.storyboard */ = {
+		68AF4FD730759AE500F74186 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				68F2AF213075956C00115A3B /* Base */,
+				68AF4FD830759AE500F74186 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		68F2AF2C3075956C00115A3B /* Main.storyboard */ = {
+		68AF4FE330759AE500F74186 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				68F2AF2D3075956C00115A3B /* Base */,
+				68AF4FE430759AE500F74186 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -585,7 +585,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		68F2AF523075956C00115A3B /* Debug */ = {
+		68AF500930759AE500F74186 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -646,7 +646,7 @@
 			};
 			name = Debug;
 		};
-		68F2AF533075956C00115A3B /* Release */ = {
+		68AF500A30759AE500F74186 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -699,7 +699,7 @@
 			};
 			name = Release;
 		};
-		68F2AF553075956C00115A3B /* Debug */ = {
+		68AF500C30759AE500F74186 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -732,7 +732,7 @@
 			};
 			name = Debug;
 		};
-		68F2AF563075956C00115A3B /* Release */ = {
+		68AF500D30759AE500F74186 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -766,7 +766,7 @@
 			};
 			name = Release;
 		};
-		68F2AF593075956C00115A3B /* Debug */ = {
+		68AF501030759AE500F74186 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -806,7 +806,7 @@
 			};
 			name = Debug;
 		};
-		68F2AF5A3075956C00115A3B /* Release */ = {
+		68AF501130759AE500F74186 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -847,7 +847,7 @@
 			};
 			name = Release;
 		};
-		68F2AF5C3075956C00115A3B /* Debug */ = {
+		68AF501330759AE500F74186 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -882,7 +882,7 @@
 			};
 			name = Debug;
 		};
-		68F2AF5D3075956C00115A3B /* Release */ = {
+		68AF501430759AE500F74186 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -917,7 +917,7 @@
 			};
 			name = Release;
 		};
-		68F2AF603075956C00115A3B /* Debug */ = {
+		68AF501730759AE500F74186 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -958,7 +958,7 @@
 			};
 			name = Debug;
 		};
-		68F2AF613075956C00115A3B /* Release */ = {
+		68AF501830759AE500F74186 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1002,52 +1002,52 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		68F2AF063075956B00115A3B /* Build configuration list for PBXProject "Resource Timer for OGame" */ = {
+		68AF4FBD30759AE400F74186 /* Build configuration list for PBXProject "Resource Timer for OGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				68F2AF523075956C00115A3B /* Debug */,
-				68F2AF533075956C00115A3B /* Release */,
+				68AF500930759AE500F74186 /* Debug */,
+				68AF500A30759AE500F74186 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		68F2AF543075956C00115A3B /* Build configuration list for PBXNativeTarget "Resource Timer for OGame Extension (iOS)" */ = {
+		68AF500B30759AE500F74186 /* Build configuration list for PBXNativeTarget "Resource Timer for OGame Extension (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				68F2AF553075956C00115A3B /* Debug */,
-				68F2AF563075956C00115A3B /* Release */,
+				68AF500C30759AE500F74186 /* Debug */,
+				68AF500D30759AE500F74186 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		68F2AF583075956C00115A3B /* Build configuration list for PBXNativeTarget "Resource Timer for OGame (iOS)" */ = {
+		68AF500F30759AE500F74186 /* Build configuration list for PBXNativeTarget "Resource Timer for OGame (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				68F2AF593075956C00115A3B /* Debug */,
-				68F2AF5A3075956C00115A3B /* Release */,
+				68AF501030759AE500F74186 /* Debug */,
+				68AF501130759AE500F74186 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		68F2AF5B3075956C00115A3B /* Build configuration list for PBXNativeTarget "Resource Timer for OGame Extension (macOS)" */ = {
+		68AF501230759AE500F74186 /* Build configuration list for PBXNativeTarget "Resource Timer for OGame Extension (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				68F2AF5C3075956C00115A3B /* Debug */,
-				68F2AF5D3075956C00115A3B /* Release */,
+				68AF501330759AE500F74186 /* Debug */,
+				68AF501430759AE500F74186 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		68F2AF5F3075956C00115A3B /* Build configuration list for PBXNativeTarget "Resource Timer for OGame (macOS)" */ = {
+		68AF501630759AE500F74186 /* Build configuration list for PBXNativeTarget "Resource Timer for OGame (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				68F2AF603075956C00115A3B /* Debug */,
-				68F2AF613075956C00115A3B /* Release */,
+				68AF501730759AE500F74186 /* Debug */,
+				68AF501830759AE500F74186 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 68F2AF033075956B00115A3B /* Project object */;
+	rootObject = 68AF4FBA30759AE400F74186 /* Project object */;
 }
