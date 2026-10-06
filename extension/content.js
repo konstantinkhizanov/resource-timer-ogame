@@ -11,10 +11,15 @@
     const box = document.getElementById('ogw-box');
     if (box) box.replaceChildren(); // force a re-render in the new language
   }
-  chrome.storage.local.get('lang').then((v) => applyLang(v.lang), () => {});
-  // Remember the game's language so the extension's own pages can match it.
-  chrome.storage.local.set({ gameLang: ogwDetectLang() }).catch(() => {});
-  chrome.storage.onChanged.addListener((changes) => { if (changes.lang) applyLang(changes.lang.newValue); });
+  // Storage is optional: a failure here must never stop the timer itself.
+  try {
+    chrome.storage.local.get('lang').then((v) => applyLang(v.lang), () => {});
+    // Remember the game's language so the extension's own pages can match it.
+    Promise.resolve(chrome.storage.local.set({ gameLang: ogwDetectLang() })).catch(() => {});
+    chrome.storage.onChanged.addListener((changes) => { if (changes.lang) applyLang(changes.lang.newValue); });
+  } catch (e) {
+    console.warn('[Resource Timer] storage unavailable', e);
+  }
 
   // Inject the page-context script so we can read OGame's resourcesBar.
   const s = document.createElement('script');
@@ -98,11 +103,15 @@
     const qty = getQuantity(details);
     let box = details.querySelector('#ogw-box');
     if (!box) {
-      box = document.createElement('div');
+      // Add the line to OGame's own info list ("Production duration", "Construction possible", ...).
+      // Fall back to right after the costs if that list isn't found.
+      const ref = details.querySelector('.build_duration, .possible_build_start, .information li');
+      const list = ref && ref.parentElement;
+      box = document.createElement(list && list.tagName === 'UL' ? 'li' : 'div');
       box.id = 'ogw-box';
-      details.querySelector('.costs').insertAdjacentElement('afterend', box);
-      // Match the font of OGame's own info lines ("Production duration: ...").
-      const ref = details.querySelector('.build_duration, .information li, li');
+      if (list) list.appendChild(box);
+      else details.querySelector('.costs').insertAdjacentElement('afterend', box);
+      // Match the font of OGame's own info lines.
       if (ref) {
         const cs = getComputedStyle(ref);
         box.style.fontSize = cs.fontSize;
@@ -188,12 +197,20 @@
     if (e.target.closest && e.target.closest('#ogw-box .ogw-i')) tooltip.style.display = 'none';
   });
 
-  setInterval(render, 1000);
+  function safeRender() {
+    try {
+      render();
+    } catch (e) {
+      console.error('[Resource Timer]', e);
+    }
+  }
+
+  setInterval(safeRender, 1000);
   document.addEventListener('input', (e) => {
-    if (e.target.matches('#build_amount, input[name="menge"]')) render();
+    if (e.target.matches('#build_amount, input[name="menge"]')) safeRender();
   });
   new MutationObserver(() => {
     const d = document.getElementById('technologydetails');
-    if (d && !d.querySelector('#ogw-box')) render();
+    if (d && !d.querySelector('#ogw-box')) safeRender();
   }).observe(document.body, { childList: true, subtree: true });
 })();
