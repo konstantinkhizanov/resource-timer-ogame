@@ -9,6 +9,8 @@ A small browser extension for [OGame](https://ogame.gameforge.com) that tells yo
 - Speaks the language your OGame server uses (EN, DE, FR, ES, IT, PL, PT, RU, TR, NL, CS, SK, HU, RO, EL, DA, SV, HR)
 - Collects no data, needs no permissions beyond the OGame pages
 
+I built this for myself, and OGame got so much better once I always knew exactly when I could build next. Now it's yours too.
+
 > Unofficial fan project. Not affiliated with or endorsed by Gameforge. OGame is a trademark of Gameforge 4D GmbH.
 
 ## Install

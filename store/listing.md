@@ -4,31 +4,38 @@
 Resource Timer for OGame
 
 ## Short description (Chrome: max 132 chars)
-See how long until your OGame planet has enough resources to build. Per-resource breakdown, ship quantities, 18 languages.
+Know exactly when you can build. Shows how long until your OGame planet has the resources — right in the game UI.
 
 ## Full description
-Stop doing resource math in your head.
+"Can I build it yet?" — never ask that again.
 
-Resource Timer for OGame adds one line to every building, research, ship and defence in OGame:
+I made this extension for myself. I was tired of opening OGame, clicking a building, seeing red numbers, and doing resource math in my head: how much metal am I missing, how fast does my mine produce, when do I come back? Once I had this little line in the game, playing OGame honestly got so much better. I log in, I see the exact time, I set a reminder, I move on with my day. No more checking every ten minutes, no more spreadsheets, no more guessing. It changed how I play — so I'm sharing it with everyone.
+
+WHAT IT DOES
+Every building, research, ship and defence gets one extra line, right under the game's own info:
 
   Resources ready in: 39m 9s  [?]
 
-Hover the ? icon to see a breakdown styled like the game's own tooltips:
+Hover the [?] for a breakdown that looks like it was always part of OGame:
 • how much of each resource you have and need
-• how much is missing
-• how long each resource takes
-• the exact clock time when you can build
+• exactly how much is missing
+• how long each resource will take
+• the clock time when you can press Build
 
-Features
-• Works for buildings, research, ships and defences
-• Uses the quantity you enter for ships and defences
-• Warns when the cost is larger than your storage or a resource isn't produced
-• Automatically uses your OGame server's language: English, Deutsch, Français, Español, Italiano, Polski, Português, Русский, Türkçe, Nederlands, Čeština, Slovenčina, Magyar, Română, Ελληνικά, Dansk, Svenska, Hrvatski
-• Fits the OGame interface — looks like part of the game
-• Read-only: does not automate anything or click anything for you
-• No data collection, no tracking, works only on OGame pages
+WHY YOU'LL LIKE IT
+• Plan your sessions: know when to come back instead of guessing
+• Ships and defences: type 10, 50 or 500 and see when you can afford the whole batch
+• Spots dead ends: warns when the cost is bigger than your storage, or a resource isn't being produced at all
+• Speaks your language automatically — English, Deutsch, Français, Español, Italiano, Polski, Português, Русский, Türkçe, Nederlands, Čeština, Slovenčina, Magyar, Română, Ελληνικά, Dansk, Svenska, Hrvatski
+• Looks native: fonts, colours and tooltips match the game
 
-Free and open source. If it saves you time, consider a small donation: DONATION_LINK
+SAFE AND LIGHT
+• Read-only: it never clicks, builds or automates anything for you
+• No accounts, no tracking, no data collection — everything is calculated in your browser
+• Runs only on OGame game pages
+
+FREE, FOREVER
+Resource Timer is free and open source. If it saves you time (it will), you can buy me a coffee: DONATION_LINK — it keeps the updates coming.
 
 Unofficial fan project. Not affiliated with or endorsed by Gameforge. OGame is a trademark of Gameforge 4D GmbH.
 
