@@ -4,3 +4,6 @@ var OGW_DONATE = {
   paypal: 'https://paypal.me/PAYPAL_NAME',   // direct PayPal
   usdt: { network: 'TRC20', address: '' }    // crypto wallet; empty address hides it
 };
+
+// Project page on GitHub (source code and bug reports).
+var OGW_REPO_URL = 'https://github.com/GITHUB_USER/resource-timer-ogame';

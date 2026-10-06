@@ -68,3 +68,33 @@ var OGW_SUPPORT_UI = {
   hr: { sTitle: 'Podrži Resource Timer', sIntro: 'Proširenje je besplatno i tako će ostati. Odaberi ono što ti je najlakše — svaka kava pomaže novim ažuriranjima. Hvala!', sRec: 'Preporučeno', sKofi: 'Kartica ili PayPal', sKofiDesc: 'Preko Ko-fija. Bez računa — plati bilo kojom bankovnom karticom ili PayPalom.', sPaypal: 'PayPal', sPaypalDesc: 'Izravno preko PayPala, ako već imaš račun.', sCrypto: 'Kripto (USDT)', sNet: 'Mreža', sCryptoWarn: 'Šalji samo USDT na ovoj mreži, inače će sredstva biti izgubljena.', sCopy: 'Kopiraj', sCopied: 'Kopirano!' }
 };
 for (var ogwL in OGW_SUPPORT_UI) Object.assign(OGW_UI[ogwL], OGW_SUPPORT_UI[ogwL]);
+
+// Footer links (source code / bug reports), merged into OGW_UI.
+var OGW_FOOTER_UI = {
+  en: { source: 'Source code', bug: 'Report a bug' },
+  de: { source: 'Quellcode', bug: 'Fehler melden' },
+  fr: { source: 'Code source', bug: 'Signaler un bug' },
+  es: { source: 'Código fuente', bug: 'Informar de un error' },
+  it: { source: 'Codice sorgente', bug: 'Segnala un bug' },
+  pl: { source: 'Kod źródłowy', bug: 'Zgłoś błąd' },
+  pt: { source: 'Código-fonte', bug: 'Reportar um erro' },
+  ru: { source: 'Исходный код', bug: 'Сообщить об ошибке' },
+  tr: { source: 'Kaynak kodu', bug: 'Hata bildir' },
+  nl: { source: 'Broncode', bug: 'Bug melden' },
+  cs: { source: 'Zdrojový kód', bug: 'Nahlásit chybu' },
+  sk: { source: 'Zdrojový kód', bug: 'Nahlásiť chybu' },
+  hu: { source: 'Forráskód', bug: 'Hiba bejelentése' },
+  ro: { source: 'Cod sursă', bug: 'Raportează o eroare' },
+  el: { source: 'Πηγαίος κώδικας', bug: 'Αναφορά σφάλματος' },
+  da: { source: 'Kildekode', bug: 'Rapportér en fejl' },
+  sv: { source: 'Källkod', bug: 'Rapportera ett fel' },
+  hr: { source: 'Izvorni kod', bug: 'Prijavi grešku' }
+};
+for (var ogwF in OGW_FOOTER_UI) Object.assign(OGW_UI[ogwF], OGW_FOOTER_UI[ogwF]);
+
+// Points the footer's [data-repo] links at the GitHub project.
+function ogwFooterLinks() {
+  document.querySelectorAll('[data-repo]').forEach(function (a) {
+    a.href = OGW_REPO_URL + a.getAttribute('data-repo');
+  });
+}

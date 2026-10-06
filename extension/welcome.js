@@ -32,3 +32,5 @@ chrome.storage.local.get('lang').then((v) => v.lang, () => null).then((saved) =>
   ogwTranslatePage(lang);
   renderDemo(lang);
 });
+
+ogwFooterLinks();

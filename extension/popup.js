@@ -26,3 +26,10 @@ select.addEventListener('change', () => {
   (value ? chrome.storage.local.set({ lang: value }) : chrome.storage.local.remove('lang'));
   show(value);
 });
+
+ogwFooterLinks();
+document.querySelectorAll('[data-repo]').forEach((a) => a.addEventListener('click', (e) => {
+  e.preventDefault();
+  chrome.tabs.create({ url: a.href });
+  window.close();
+}));

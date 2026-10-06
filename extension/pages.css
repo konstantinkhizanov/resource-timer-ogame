@@ -53,3 +53,7 @@ select {
 .note { font-size: 11px; }
 .muted { font-size: 10px; color: #6b7682; }
 .hl { color: var(--ok); font-weight: bold; white-space: nowrap; }
+.footer { display: flex; align-items: center; gap: 6px; font-size: 11px; color: #6b7682; }
+.footer svg { width: 14px; height: 14px; color: #8b96a1; }
+.footer a { color: var(--link); text-decoration: none; }
+.footer a:hover { text-decoration: underline; }

@@ -28,3 +28,5 @@ chrome.storage.local.get('lang').then((v) => v.lang, () => null).then((saved) =>
     });
   });
 });
+
+ogwFooterLinks();
