@@ -63,4 +63,4 @@ Developer Hub → your add-on → Edit Product Page → "Contributions URL": pas
 This shows a "Contribute" button on the add-on page.
 
 ## Where the donate link lives in code
-extension/config.js → OGW_DONATE_URL (used by the toolbar popup and the welcome page).
+extension/config.js → OGW_DONATE (kofi, paypal, usdt). The popup and welcome page open support.html, which lists the configured options.

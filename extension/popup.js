@@ -1,5 +1,9 @@
 const select = document.getElementById('lang');
-document.getElementById('support').href = OGW_DONATE_URL;
+document.getElementById('support').addEventListener('click', (e) => {
+  e.preventDefault();
+  chrome.tabs.create({ url: chrome.runtime.getURL('support.html') });
+  window.close();
+});
 
 function fillLanguages(lang, saved) {
   select.replaceChildren();

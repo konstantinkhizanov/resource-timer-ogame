@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support Resource Timer</title>
+  <link rel="icon" href="icons/icon-32.png">
+  <link rel="stylesheet" href="pages.css">
+  <style>
+    body { padding: 40px 16px; }
+    main { max-width: 560px; margin: 0 auto; display: grid; gap: 16px; }
+    .header img { width: 64px; height: 64px; }
+    h1 { font-size: 22px; }
+    .intro { margin: 0; font-size: 14px; color: #c8d0d8; }
+    .option {
+      display: flex; align-items: center; gap: 14px;
+      text-decoration: none; color: var(--text);
+      transition: border-color .15s, transform .15s;
+    }
+    a.option:hover { border-color: var(--accent); transform: translateY(-1px); }
+    .option .icon {
+      flex: none; width: 44px; height: 44px; border-radius: 10px;
+      display: grid; place-items: center; font-size: 22px;
+    }
+    .option h2 { font-size: 15px; color: var(--strong); display: flex; align-items: center; gap: 8px; }
+    .option p { margin: 2px 0 0; font-size: 12px; }
+    .option .go { margin-left: auto; color: var(--accent); font-size: 20px; }
+    .badge {
+      font-size: 10px; font-weight: bold; text-transform: uppercase; letter-spacing: .5px;
+      color: #1a1200; background: var(--accent); border-radius: 3px; padding: 1px 6px;
+    }
+    .kofi .icon { background: linear-gradient(#ffad33, #e07f00); }
+    .paypal .icon { background: linear-gradient(#2a7fd4, #0b4a8f); }
+    .crypto .icon { background: linear-gradient(#2fb592, #157a5f); }
+    .crypto { flex-wrap: wrap; }
+    .crypto .body { flex: 1; min-width: 0; }
+    .wallet { display: flex; gap: 8px; margin-top: 8px; }
+    .wallet code {
+      flex: 1; min-width: 0; overflow-wrap: anywhere;
+      background: #0f151d; color: var(--strong); border: 1px solid var(--border);
+      border-radius: 4px; padding: 6px 8px; font-size: 12px;
+    }
+    .wallet button {
+      flex: none; cursor: pointer; font: inherit; font-size: 12px; font-weight: bold;
+      color: var(--strong); background: #24303e; border: 1px solid var(--border); border-radius: 4px; padding: 0 12px;
+    }
+    .wallet button:hover { border-color: var(--accent); }
+    .warn { color: #d9a441; }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="header">
+      <img src="icons/icon-128.png" alt="">
+      <h1 data-i18n="sTitle"></h1>
+    </div>
+    <p class="intro" data-i18n="sIntro"></p>
+
+    <a class="panel option kofi" id="kofi" target="_blank" rel="noopener">
+      <div class="icon">☕</div>
+      <div>
+        <h2><span data-i18n="sKofi"></span> <span class="badge" data-i18n="sRec"></span></h2>
+        <p data-i18n="sKofiDesc"></p>
+      </div>
+      <span class="go">›</span>
+    </a>
+
+    <a class="panel option paypal" id="paypal" target="_blank" rel="noopener">
+      <div class="icon">P</div>
+      <div>
+        <h2 data-i18n="sPaypal"></h2>
+        <p data-i18n="sPaypalDesc"></p>
+      </div>
+      <span class="go">›</span>
+    </a>
+
+    <div class="panel option crypto" id="crypto">
+      <div class="icon">₮</div>
+      <div class="body">
+        <h2 data-i18n="sCrypto"></h2>
+        <p><span data-i18n="sNet"></span>: <strong id="net"></strong></p>
+        <div class="wallet">
+          <code id="address"></code>
+          <button id="copy" type="button" data-i18n="sCopy"></button>
+        </div>
+        <p class="warn" data-i18n="sCryptoWarn"></p>
+      </div>
+    </div>
+
+    <div class="muted" data-i18n="unofficial"></div>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="i18n.js"></script>
+  <script src="ui-strings.js"></script>
+  <script src="support.js"></script>
+</body>
+</html>

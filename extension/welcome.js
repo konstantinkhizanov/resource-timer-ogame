@@ -1,4 +1,4 @@
-document.getElementById('support').href = OGW_DONATE_URL;
+document.getElementById('support').href = 'support.html';
 
 function h(tag, cls, ...children) {
   const el = document.createElement(tag);

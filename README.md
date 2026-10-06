@@ -34,7 +34,8 @@ extension/        the extension itself (shared by all browsers)
   popup.*         toolbar popup (how-to, language picker, support link)
   welcome.*       page opened once after install
   ui-strings.js   translations for popup and welcome page
-  config.js       donation link
+  support.*       donation page (Ko-fi / PayPal / crypto)
+  config.js       donation links (empty value hides an option)
   background.js   opens the welcome page on install
 safari/           Xcode project wrapping the extension for Safari
 tools/build.sh    builds dist/*-chrome.zip and dist/*-firefox.zip; --safari also builds the Safari app
