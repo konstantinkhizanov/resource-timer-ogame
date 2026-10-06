@@ -2,7 +2,13 @@
 var OGW_DONATE = {
   kofi: 'https://ko-fi.com/DONATION_LINK',   // card or PayPal via Ko-fi
   paypal: 'https://paypal.me/PAYPAL_NAME',   // direct PayPal
-  usdt: { network: 'TRC20', address: '' }    // crypto wallet; empty address hides it
+  // Crypto wallets; ones with an empty address are hidden (the whole block if all are empty).
+  crypto: [
+    { coin: 'USDT', network: 'TRON (TRC20)', address: '' },
+    { coin: 'Bitcoin', network: 'Bitcoin', address: '' },
+    { coin: 'Ethereum', network: 'Ethereum (ERC20)', address: '' },
+    { coin: 'TON', network: 'TON', address: '' }
+  ]
 };
 
 // Project page on GitHub (source code and bug reports).

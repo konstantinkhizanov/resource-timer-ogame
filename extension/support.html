@@ -31,10 +31,13 @@
     }
     .kofi .icon { background: linear-gradient(#ffad33, #e07f00); }
     .paypal .icon { background: linear-gradient(#2a7fd4, #0b4a8f); }
-    .crypto .icon { background: linear-gradient(#2fb592, #157a5f); }
+    .crypto .icon { background: linear-gradient(#f7a83b, #c46f0a); align-self: flex-start; }
     .crypto { flex-wrap: wrap; }
     .crypto .body { flex: 1; min-width: 0; }
-    .wallet { display: flex; gap: 8px; margin-top: 8px; }
+    .wallet-row { margin-top: 10px; }
+    .wallet-row .coin { color: var(--strong); font-weight: bold; }
+    .wallet-row .net { font-size: 11px; }
+    .wallet { display: flex; gap: 8px; margin-top: 4px; }
     .wallet code {
       flex: 1; min-width: 0; overflow-wrap: anywhere;
       background: #0f151d; color: var(--strong); border: 1px solid var(--border);
@@ -76,14 +79,10 @@
     </a>
 
     <div class="panel option crypto" id="crypto">
-      <div class="icon">₮</div>
+      <div class="icon">₿</div>
       <div class="body">
         <h2 data-i18n="sCrypto"></h2>
-        <p><span data-i18n="sNet"></span>: <strong id="net"></strong></p>
-        <div class="wallet">
-          <code id="address"></code>
-          <button id="copy" type="button" data-i18n="sCopy"></button>
-        </div>
+        <div id="wallets"></div>
         <p class="warn" data-i18n="sCryptoWarn"></p>
       </div>
     </div>
