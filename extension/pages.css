@@ -52,3 +52,4 @@ select {
 .support-btn:hover { background: linear-gradient(#ffbe5c, #f08a00); }
 .note { font-size: 11px; }
 .muted { font-size: 10px; color: #6b7682; }
+.hl { color: var(--ok); font-weight: bold; white-space: nowrap; }
