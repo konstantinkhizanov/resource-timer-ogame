@@ -14,7 +14,9 @@
           production: Number(r.production) || 0 // per second
         };
       });
-      document.documentElement.setAttribute('data-ogw-res', JSON.stringify({ t: Date.now(), res: out }));
+      var ls = window.LocalizationStrings;
+      var units = ls && ls.timeunits && ls.timeunits.short;
+      document.documentElement.setAttribute('data-ogw-res', JSON.stringify({ t: Date.now(), res: out, units: units || null }));
     } catch (e) { /* ignore */ }
   }
   publish();

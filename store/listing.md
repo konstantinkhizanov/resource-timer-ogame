@@ -25,6 +25,7 @@ Hover the [?] for a breakdown that looks like it was always part of OGame:
 WHY YOU'LL LIKE IT
 • Plan your sessions: know when to come back instead of guessing
 • Ships and defences: type 10, 50 or 500 and see when you can afford the whole batch
+• Build queue aware: tells you whether resources will be there when your queued building or research actually starts
 • Spots dead ends: warns when the cost is bigger than your storage, or a resource isn't being produced at all
 • Speaks your language automatically — English, Deutsch, Français, Español, Italiano, Polski, Português, Русский, Türkçe, Nederlands, Čeština, Slovenčina, Magyar, Română, Ελληνικά, Dansk, Svenska, Hrvatski
 • Looks native: fonts, colours and tooltips match the game

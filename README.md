@@ -5,6 +5,7 @@ A small browser extension for [OGame](https://ogame.gameforge.com) that tells yo
 - One line in the item details: `Resources ready in: 39m 9s`
 - Hover the **?** icon for a per-resource breakdown (have / need / missing / time) and the exact time it will be ready
 - Respects the quantity you type for ships and defences
+- Checks the build queue: shows ✓/✗ whether resources will be ready when a queued building or research starts (OGame charges at start)
 - Warns when the cost exceeds your storage or a resource isn't being produced
 - Speaks the language your OGame server uses (EN, DE, FR, ES, IT, PL, PT, RU, TR, NL, CS, SK, HU, RO, EL, DA, SV, HR)
 - Toolbar popup with a language picker (defaults to the game's language)

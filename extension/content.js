@@ -56,6 +56,45 @@
     return { amount, storage: nums[1] || Infinity, perSec: (nums[2] || 0) / 3600 };
   }
 
+  // Seconds from an OGame duration text such as "3m 2s" or "1h 9m 28s", using the game's own unit letters.
+  function parseDuration(text) {
+    let u = null;
+    try { u = JSON.parse(document.documentElement.getAttribute('data-ogw-res') || '{}').units; } catch (e) { /* default units */ }
+    u = u || {};
+    const map = {};
+    map[(u.week || 'w').toLowerCase()] = 604800;
+    map[(u.day || 'd').toLowerCase()] = 86400;
+    map[(u.hour || 'h').toLowerCase()] = 3600;
+    map[(u.minute || 'm').toLowerCase()] = 60;
+    map[(u.second || 's').toLowerCase()] = 1;
+    let total = 0;
+    let found = false;
+    for (const m of String(text).matchAll(/(\d+)\s*([^\d\s.,:]+)/g)) {
+      const k = m[2].toLowerCase();
+      if (map[k] != null) { total += Number(m[1]) * map[k]; found = true; }
+    }
+    return found ? total : null;
+  }
+
+  // In OGame, a queued building/research pays its cost when it starts, i.e. when the current
+  // construction in the same queue finishes. Returns { rem: seconds until then, queued: items
+  // already waiting } or null when that queue is idle (or this is the shipyard, which pays upfront).
+  const QUEUE_BOX = { supplies: 'building', facilities: 'building', research: 'research', lfbuildings: 'lfbuilding', lfresearch: 'lfresearch' };
+  function queueInfo() {
+    const key = QUEUE_BOX[new URLSearchParams(location.search).get('component')];
+    if (!key) return null;
+    const box = document.querySelector(`[id^="productionbox${key}"]`);
+    const cd = box && box.querySelector('.countdown, [data-end], time');
+    if (!cd) return null;
+    let rem = parseDuration(cd.textContent);
+    if (rem == null) {
+      const end = Number(cd.getAttribute('data-end'));
+      if (end) rem = ((end > 1e12 ? end : end * 1000) - Date.now()) / 1000;
+    }
+    if (rem == null || rem <= 0) return null;
+    return { rem, queued: box.querySelectorAll('.queuePic, table.queue td').length };
+  }
+
   function fmtDuration(sec) {
     sec = Math.ceil(sec);
     const d = Math.floor(sec / 86400);
@@ -159,13 +198,21 @@
     } else {
       line = [T.readyIn + qtyLabel + ': ', h('strong', null, fmtDuration(maxWait))];
     }
+
+    // Something is already being built in this queue: will the resources be there when ours starts?
+    const queue = impossible || !maxWait ? null : queueInfo();
+    const late = queue && maxWait > queue.rem;
+    if (queue) line.push(' · ', h('span', late ? 'ogw-bad' : 'ogw-ok', late ? '✗ ' + T.queueLate : '✓ ' + T.queueOk));
     const lineNode = h('span', null, ...line, ' ', h('span', 'ogw-i', '?'));
     if (box.innerHTML !== lineNode.innerHTML) box.replaceChildren(...lineNode.childNodes);
 
     box.ogwTip = h('div', null,
       h('div', 'ogw-tip-title', T.title + qtyLabel),
       h('table', null, ...rows),
-      maxWait && !impossible ? h('div', 'ogw-tip-foot', T.readyAt + ' ' + fmtClock(maxWait)) : '');
+      maxWait && !impossible ? h('div', 'ogw-tip-foot', T.readyAt + ' ' + fmtClock(maxWait)) : '',
+      queue ? h('div', late ? 'ogw-tip-queue ogw-bad' : 'ogw-tip-queue ogw-ok',
+        T.queueStarts + ': ' + fmtDuration(queue.rem) + ' (' + fmtClock(queue.rem) + ')') : '',
+      queue && queue.queued ? h('div', 'ogw-tip-note', '+' + queue.queued + ' ' + T.queueMore) : '');
     if (tooltip.style.display === 'block') tooltip.replaceChildren(...box.ogwTip.cloneNode(true).childNodes);
   }
 

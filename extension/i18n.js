@@ -20,6 +20,29 @@ var OGW_STRINGS = {
   hr: { metal: 'Metal', crystal: 'Kristal', deuterium: 'Deuterij', readyIn: 'Resursi spremni za', enough: 'Dovoljno resursa', cant: 'Ne može se skupiti', storageSmall: 'premalo skladište', storage: 'skladište', noProd: 'nema proizvodnje', ready: 'spremno', title: 'Skupljanje resursa', readyAt: 'Spremno u' }
 };
 
+// Strings for the build queue check, merged into OGW_STRINGS.
+var OGW_QUEUE_STRINGS = {
+  en: { queueOk: 'in time for queue', queueLate: 'too late for queue', queueStarts: 'Queue starts in', queueMore: 'more queued before it; their costs are not counted' },
+  de: { queueOk: 'rechtzeitig für die Warteschlange', queueLate: 'zu spät für die Warteschlange', queueStarts: 'Warteschlange startet in', queueMore: 'weitere davor in der Warteschlange; deren Kosten sind nicht eingerechnet' },
+  fr: { queueOk: 'à temps pour la file', queueLate: 'trop tard pour la file', queueStarts: 'La file démarre dans', queueMore: 'autres avant dans la file ; leurs coûts ne sont pas comptés' },
+  es: { queueOk: 'a tiempo para la cola', queueLate: 'tarde para la cola', queueStarts: 'La cola empieza en', queueMore: 'más antes en la cola; sus costes no se cuentan' },
+  it: { queueOk: 'in tempo per la coda', queueLate: 'troppo tardi per la coda', queueStarts: 'La coda parte tra', queueMore: 'altri prima in coda; i loro costi non sono contati' },
+  pl: { queueOk: 'zdąży do kolejki', queueLate: 'za późno dla kolejki', queueStarts: 'Kolejka startuje za', queueMore: 'więcej wcześniej w kolejce; ich koszty nie są liczone' },
+  pt: { queueOk: 'a tempo para a fila', queueLate: 'tarde demais para a fila', queueStarts: 'A fila começa em', queueMore: 'outros antes na fila; os custos deles não são contados' },
+  ru: { queueOk: 'успеет к очереди', queueLate: 'не успеет к очереди', queueStarts: 'Очередь начнётся через', queueMore: 'ещё в очереди перед ним; их стоимость не учтена' },
+  tr: { queueOk: 'sıraya yetişir', queueLate: 'sıraya yetişmez', queueStarts: 'Sıra başlıyor', queueMore: 'öncesinde sırada daha var; maliyetleri hesaba katılmadı' },
+  nl: { queueOk: 'op tijd voor de wachtrij', queueLate: 'te laat voor de wachtrij', queueStarts: 'Wachtrij start over', queueMore: 'meer ervoor in de wachtrij; hun kosten tellen niet mee' },
+  cs: { queueOk: 'stihne frontu', queueLate: 'nestihne frontu', queueStarts: 'Fronta začne za', queueMore: 'další ve frontě před ním; jejich cena není započtena' },
+  sk: { queueOk: 'stihne front', queueLate: 'nestihne front', queueStarts: 'Front začne o', queueMore: 'ďalšie vo fronte pred ním; ich cena nie je započítaná' },
+  hu: { queueOk: 'időben a sorhoz', queueLate: 'túl késő a sorhoz', queueStarts: 'A sor indul', queueMore: 'további előtte a sorban; költségük nincs beszámítva' },
+  ro: { queueOk: 'la timp pentru coadă', queueLate: 'prea târziu pentru coadă', queueStarts: 'Coada începe în', queueMore: 'altele înainte în coadă; costurile lor nu sunt incluse' },
+  el: { queueOk: 'έγκαιρα για την ουρά', queueLate: 'αργά για την ουρά', queueStarts: 'Η ουρά ξεκινά σε', queueMore: 'ακόμη πριν στην ουρά· το κόστος τους δεν υπολογίζεται' },
+  da: { queueOk: 'i tide til køen', queueLate: 'for sent til køen', queueStarts: 'Køen starter om', queueMore: 'flere før i køen; deres pris er ikke medregnet' },
+  sv: { queueOk: 'i tid för kön', queueLate: 'för sent för kön', queueStarts: 'Kön startar om', queueMore: 'fler före i kön; deras kostnad räknas inte med' },
+  hr: { queueOk: 'stiže za red', queueLate: 'prekasno za red', queueStarts: 'Red počinje za', queueMore: 'još u redu prije; njihova cijena nije uračunata' }
+};
+for (var ogwQ in OGW_QUEUE_STRINGS) Object.assign(OGW_STRINGS[ogwQ], OGW_QUEUE_STRINGS[ogwQ]);
+
 // OGame server/country codes that differ from the language code.
 var OGW_LANG_ALIASES = { us: 'en', uk: 'en', br: 'pt', ar: 'es', mx: 'es', cz: 'cs', gr: 'el', dk: 'da', se: 'sv', ba: 'hr', yu: 'hr' };
 
