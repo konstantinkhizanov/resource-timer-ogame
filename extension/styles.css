@@ -1,0 +1,66 @@
+#ogw-box {
+  position: relative;
+  margin: 0;
+  white-space: nowrap;
+  display: inline-block;
+  z-index: 1;
+}
+#ogw-box strong { color: #fff; font-weight: bold; }
+#ogw-box .ogw-ok { color: #99cc00; }
+#ogw-box .ogw-bad { color: #d43635; }
+
+/* "i" icon, styled like OGame's small "?" help icons */
+#ogw-box .ogw-i {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-left: 4px;
+  vertical-align: -2px;
+  border-radius: 3px;
+  background: linear-gradient(#3a5272, #1f2e44);
+  border: 1px solid #4f6a8f;
+  color: #fff;
+  font: bold 11px/15px Verdana, Arial, sans-serif;
+  text-align: center;
+  cursor: help;
+}
+#ogw-box .ogw-i:hover { background: linear-gradient(#4b6890, #2a3d58); }
+
+/* Tooltip, mimics OGame's tooltip look */
+#ogw-tooltip {
+  display: none;
+  position: fixed;
+  z-index: 100000;
+  min-width: 180px;
+  padding: 6px 10px 8px;
+  background: linear-gradient(#26303c, #1a2129);
+  border: 1px solid #47566a;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  color: #a9b3bd;
+  font: 11px/1.6 Verdana, Arial, sans-serif;
+  pointer-events: none;
+}
+#ogw-tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: calc(var(--ogw-arrow, 50%) - 7px);
+  border: 7px solid transparent;
+  border-bottom: 0;
+  border-top-color: #47566a;
+}
+#ogw-tooltip .ogw-tip-title {
+  color: #fff;
+  font-weight: bold;
+  padding-bottom: 4px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #36424f;
+}
+#ogw-tooltip table { border-collapse: collapse; }
+#ogw-tooltip th { text-align: left; font-weight: normal; padding-right: 10px; }
+#ogw-tooltip td { color: #fff; padding-right: 10px; text-align: right; }
+#ogw-tooltip td:last-child { padding-right: 0; font-weight: bold; }
+#ogw-tooltip .ogw-ok { color: #99cc00; }
+#ogw-tooltip .ogw-bad { color: #d43635; }
+#ogw-tooltip .ogw-tip-foot { margin-top: 4px; color: #ff9600; font-weight: bold; }
