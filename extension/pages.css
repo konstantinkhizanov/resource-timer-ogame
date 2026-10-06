@@ -38,23 +38,39 @@ select {
   border-radius: 4px;
   font: inherit;
 }
-/* Styled after OGame's green "Improve" / "Research" button */
+/* Copy of OGame's green build button ("Improve" / "In queue") */
 .support-btn {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   display: block;
   text-align: center;
-  padding: 10px 12px;
-  border-radius: 5px;
-  border: 1px solid #1f4a08;
-  background: linear-gradient(#9be04f 0%, #6cbf2a 48%, #4f9e17 52%, #3c8410 100%);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.45), inset 0 -2px 0 rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.5);
+  padding: 11px 12px;
+  border: 2px solid #335f12;
+  border-radius: 8px;
+  background:
+    repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.07) 0 2px, transparent 2px 5px),
+    linear-gradient(#8fd23c 0%, #78c42a 50%, #6bb522 51%, #5ea41b 100%);
+  box-shadow:
+    inset 0 0 0 1px rgba(214, 255, 160, 0.35),
+    0 0 0 1px #0d1a06,
+    0 3px 8px rgba(0, 0, 0, 0.6);
   color: #fff;
-  font-size: 15px;
-  font-weight: bold;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+  font: bold 17px/1.2 Verdana, Arial, sans-serif;
+  text-shadow: 0 0 2px #2c560d, 0 1px 1px #2c560d, 0 1px 3px rgba(0, 0, 0, 0.5);
   text-decoration: none;
 }
-.support-btn:hover { background: linear-gradient(#a9ea5f 0%, #78cc34 48%, #5aab1e 52%, #469214 100%); }
-.support-btn:active { box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4); }
+/* The lighter "roof" shape in the middle of OGame's button */
+.support-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(rgba(255, 255, 255, 0.26), rgba(255, 255, 255, 0.08));
+  clip-path: polygon(0 52%, 34% 52%, 50% 8%, 66% 52%, 100% 52%, 100% 100%, 0 100%);
+}
+.support-btn:hover { filter: brightness(1.08); }
+.support-btn:active { filter: brightness(0.95); transform: translateY(1px); }
 .note { font-size: 11px; }
 .muted { font-size: 10px; color: #6b7682; }
 .hl { color: var(--ok); font-weight: bold; white-space: nowrap; }
