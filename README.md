@@ -7,6 +7,7 @@ A small browser extension for [OGame](https://ogame.gameforge.com) that tells yo
 - Respects the quantity you type for ships and defences
 - Warns when the cost exceeds your storage or a resource isn't being produced
 - Speaks the language your OGame server uses (EN, DE, FR, ES, IT, PL, PT, RU, TR, NL, CS, SK, HU, RO, EL, DA, SV, HR)
+- Toolbar popup with a language picker (defaults to the game's language)
 - Collects no data, needs no permissions beyond the OGame pages
 
 I built this for myself, and OGame got so much better once I always knew exactly when I could build next. Now it's yours too.
@@ -30,8 +31,13 @@ extension/        the extension itself (shared by all browsers)
   i18n.js         translations + language detection
   content.js      reads costs and resources, renders the line and tooltip
   inject.js       runs in the page to read OGame's resourcesBar
+  popup.*         toolbar popup (how-to, language picker, support link)
+  welcome.*       page opened once after install
+  ui-strings.js   translations for popup and welcome page
+  config.js       donation link
+  background.js   opens the welcome page on install
 safari/           Xcode project wrapping the extension for Safari
-tools/build.sh    builds dist/*.zip (Chrome + Firefox); --safari also builds the Safari app
+tools/build.sh    builds dist/*-chrome.zip and dist/*-firefox.zip; --safari also builds the Safari app
 tools/make-icons.swift   renders the icons
 store/            store listing texts and icons
 ```

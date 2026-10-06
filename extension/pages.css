@@ -1,0 +1,54 @@
+/* Shared look for the popup and the welcome page, in OGame colours. */
+:root {
+  --bg: #0d1117;
+  --panel: #161d27;
+  --border: #2c3a4b;
+  --text: #a9b3bd;
+  --strong: #ffffff;
+  --accent: #ff9600;
+  --link: #6f9fd8;
+  --ok: #99cc00;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 13px/1.5 Verdana, Arial, sans-serif;
+}
+h1, h2 { color: var(--accent); margin: 0; }
+a { color: var(--link); }
+.header { display: flex; align-items: center; gap: 12px; }
+.header img { width: 48px; height: 48px; flex: none; }
+.panel {
+  background: linear-gradient(#1b2430, var(--panel));
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 12px 14px;
+}
+ol { margin: 6px 0 0; padding-left: 20px; }
+ol li { margin: 2px 0; }
+select {
+  width: 100%;
+  margin-top: 4px;
+  padding: 5px 6px;
+  background: #0f151d;
+  color: var(--strong);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font: inherit;
+}
+.support-btn {
+  display: block;
+  text-align: center;
+  padding: 9px 12px;
+  border-radius: 5px;
+  border: 1px solid #b86b00;
+  background: linear-gradient(#ffad33, #e07f00);
+  color: #1a1200;
+  font-weight: bold;
+  text-decoration: none;
+}
+.support-btn:hover { background: linear-gradient(#ffbe5c, #f08a00); }
+.note { font-size: 11px; }
+.muted { font-size: 10px; color: #6b7682; }

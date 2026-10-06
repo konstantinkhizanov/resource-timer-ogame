@@ -28,6 +28,7 @@ WHY YOU'LL LIKE IT
 • Spots dead ends: warns when the cost is bigger than your storage, or a resource isn't being produced at all
 • Speaks your language automatically — English, Deutsch, Français, Español, Italiano, Polski, Português, Русский, Türkçe, Nederlands, Čeština, Slovenčina, Magyar, Română, Ελληνικά, Dansk, Svenska, Hrvatski
 • Looks native: fonts, colours and tooltips match the game
+• Want a different language? Click the hourglass icon in your toolbar and pick one
 
 SAFE AND LIGHT
 • Read-only: it never clicks, builds or automates anything for you
@@ -56,3 +57,10 @@ Suggested: (1) details panel with the line, (2) tooltip open with a missing reso
 
 ## Icons
 store/icon-512.png, store/icon-1024.png (App Store), extension/icons/icon-128.png (Chrome)
+
+## Firefox Add-ons: "Contributions URL"
+Developer Hub → your add-on → Edit Product Page → "Contributions URL": paste the Ko-fi link.
+This shows a "Contribute" button on the add-on page.
+
+## Where the donate link lives in code
+extension/config.js → OGW_DONATE_URL (used by the toolbar popup and the welcome page).

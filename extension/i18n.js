@@ -23,7 +23,12 @@ var OGW_STRINGS = {
 // OGame server/country codes that differ from the language code.
 var OGW_LANG_ALIASES = { us: 'en', uk: 'en', br: 'pt', ar: 'es', mx: 'es', cz: 'cs', gr: 'el', dk: 'da', se: 'sv', ba: 'hr', yu: 'hr' };
 
-function ogwDetectLang() {
+// Native names for the language picker in the popup.
+var OGW_LANG_NAMES = { en: 'English', de: 'Deutsch', fr: 'Français', es: 'Español', it: 'Italiano', pl: 'Polski', pt: 'Português', ru: 'Русский', tr: 'Türkçe', nl: 'Nederlands', cs: 'Čeština', sk: 'Slovenčina', hu: 'Magyar', ro: 'Română', el: 'Ελληνικά', da: 'Dansk', sv: 'Svenska', hr: 'Hrvatski' };
+
+// override: language chosen by the user ('auto' or empty = detect).
+function ogwDetectLang(override) {
+  if (override && OGW_STRINGS[override]) return override;
   var candidates = [];
   var meta = document.querySelector('meta[name="ogame-language"]');
   if (meta) candidates.push(meta.getAttribute('content'));

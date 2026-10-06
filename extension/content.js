@@ -2,9 +2,17 @@
   'use strict';
 
   const RES = ['metal', 'crystal', 'deuterium'];
-  const LANG = ogwDetectLang();
-  const T = OGW_STRINGS[LANG];
-  const LOCALE = LANG;
+  // Language: the game's own language, unless the user picked one in the popup.
+  let LOCALE = ogwDetectLang();
+  let T = OGW_STRINGS[LOCALE];
+  function applyLang(override) {
+    LOCALE = ogwDetectLang(override);
+    T = OGW_STRINGS[LOCALE];
+    const box = document.getElementById('ogw-box');
+    if (box) box.replaceChildren(); // force a re-render in the new language
+  }
+  chrome.storage.local.get('lang').then((v) => applyLang(v.lang), () => {});
+  chrome.storage.onChanged.addListener((changes) => { if (changes.lang) applyLang(changes.lang.newValue); });
 
   // Inject the page-context script so we can read OGame's resourcesBar.
   const s = document.createElement('script');

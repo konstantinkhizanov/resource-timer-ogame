@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="pages.css">
+  <style>
+    body { width: 320px; padding: 14px; display: grid; gap: 12px; }
+    h1 { font-size: 15px; }
+    h2 { font-size: 12px; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="icons/icon-48.png" alt="">
+    <div>
+      <h1>Resource Timer</h1>
+      <div class="note" data-i18n="tagline"></div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2 data-i18n="howTitle"></h2>
+    <ol>
+      <li data-i18n="how1"></li>
+      <li data-i18n="how2"></li>
+      <li data-i18n="how3"></li>
+    </ol>
+  </div>
+
+  <label>
+    <span data-i18n="lang"></span>
+    <select id="lang"></select>
+  </label>
+
+  <div>
+    <a class="support-btn" id="support" target="_blank" rel="noopener">❤ <span data-i18n="support"></span></a>
+    <p class="note" data-i18n="supportNote"></p>
+  </div>
+
+  <div class="muted" data-i18n="unofficial"></div>
+
+  <script src="config.js"></script>
+  <script src="i18n.js"></script>
+  <script src="ui-strings.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

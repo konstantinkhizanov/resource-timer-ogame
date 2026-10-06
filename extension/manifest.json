@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Resource Timer for OGame",
   "short_name": "Resource Timer",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Shows how long to wait until your planet has enough resources to build. Unofficial, not affiliated with Gameforge.",
   "icons": {
     "16": "icons/icon-16.png",
@@ -11,6 +11,24 @@
     "96": "icons/icon-96.png",
     "128": "icons/icon-128.png"
   },
+  "action": {
+    "default_title": "Resource Timer",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js",
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "permissions": [
+    "storage"
+  ],
   "content_scripts": [
     {
       "matches": [
