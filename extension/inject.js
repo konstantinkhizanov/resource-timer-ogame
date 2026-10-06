@@ -19,10 +19,13 @@
       document.documentElement.setAttribute('data-ogw-res', JSON.stringify({ t: Date.now(), res: out, units: units || null }));
     } catch (e) { /* ignore */ }
   }
-  publish();
-  // resourcesBar is replaced after ajax actions (e.g. building something); re-publish when it changes.
+  // OGame updates resourcesBar after ajax actions and fleet arrivals, sometimes by replacing it and
+  // sometimes in place, so compare the values themselves. Republishing resets the extrapolation start.
   var last = null;
   setInterval(function () {
-    if (window.resourcesBar !== last) { last = window.resourcesBar; publish(); }
+    var rb = window.resourcesBar;
+    var snapshot;
+    try { snapshot = JSON.stringify(rb && rb.resources); } catch (e) { snapshot = null; }
+    if (snapshot !== last) { last = snapshot; publish(); }
   }, 1000);
 })();

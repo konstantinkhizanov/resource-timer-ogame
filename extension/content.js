@@ -32,6 +32,14 @@
     return m ? Number(m) : 0;
   };
 
+  // The amount shown in OGame's resource bar right now. The game keeps it live, including
+  // deliveries from transports and expeditions. Null if it's abbreviated (e.g. "1.2M") or missing.
+  function liveBarAmount(key) {
+    const el = document.getElementById('resources_' + key);
+    const text = el ? el.textContent.trim() : '';
+    return /^[\d.,\s\u00a0'’]+$/.test(text) ? parseNum(text) : null;
+  }
+
   // Current state of a resource: amount now, storage cap, production per second.
   function getResource(key) {
     const raw = document.documentElement.getAttribute('data-ogw-res');
@@ -40,9 +48,13 @@
         const { t, res } = JSON.parse(raw);
         const r = res[key];
         if (r) {
-          const elapsed = (Date.now() - t) / 1000;
-          let amount = r.amount;
-          if (amount < r.storage) amount = Math.min(r.storage, amount + r.production * elapsed);
+          let amount = liveBarAmount(key);
+          if (amount == null) {
+            // Extrapolate from the last known amount.
+            const elapsed = (Date.now() - t) / 1000;
+            amount = r.amount;
+            if (amount < r.storage) amount = Math.min(r.storage, amount + r.production * elapsed);
+          }
           return { amount, storage: r.storage, perSec: r.production };
         }
       } catch (e) { /* fall through */ }
