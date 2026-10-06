@@ -1,4 +1,4 @@
-// Renders the extension icon (dark OGame-blue tile with an orange hourglass) at several sizes.
+// Renders the extension icon (dark OGame-blue tile with a gold hourglass (same colour as page titles)) at several sizes.
 // Usage: swift tools/make-icons.swift <outdir> <size>...
 import AppKit
 
@@ -25,13 +25,13 @@ func render(_ size: Int, to path: String) {
   glass.move(to: NSPoint(x: l, y: top)); glass.line(to: NSPoint(x: r, y: top))
   glass.line(to: NSPoint(x: mid + neck, y: mid)); glass.line(to: NSPoint(x: r, y: bot))
   glass.line(to: NSPoint(x: l, y: bot)); glass.line(to: NSPoint(x: mid - neck, y: mid)); glass.close()
-  NSColor(red: 1, green: 0.59, blue: 0, alpha: 1).setStroke()
+  NSColor(red: 0.878, green: 0.667, blue: 0.243, alpha: 1).setStroke()
   glass.lineWidth = max(1.2, s * 0.06)
   glass.lineJoinStyle = .round
   glass.stroke()
 
   // Sand (bottom pile + top remainder)
-  NSColor(red: 1, green: 0.75, blue: 0.3, alpha: 1).setFill()
+  NSColor(red: 0.96, green: 0.82, blue: 0.48, alpha: 1).setFill()
   let pile = NSBezierPath()
   pile.move(to: NSPoint(x: l + s * 0.06, y: bot + s * 0.03)); pile.line(to: NSPoint(x: r - s * 0.06, y: bot + s * 0.03))
   pile.line(to: NSPoint(x: mid, y: bot + s * 0.17)); pile.close(); pile.fill()
