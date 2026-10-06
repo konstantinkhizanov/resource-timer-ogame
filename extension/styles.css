@@ -5,7 +5,7 @@
   display: inline-block;
   z-index: 1;
 }
-#ogw-box strong { color: #fff; font-weight: bold; }
+#ogw-box strong { color: #8fd14f; font-weight: bold; }
 #ogw-box .ogw-ok { color: #99cc00; }
 #ogw-box .ogw-bad { color: #d43635; }
 
