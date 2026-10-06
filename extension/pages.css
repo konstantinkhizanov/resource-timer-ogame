@@ -1,13 +1,16 @@
-/* Shared look for the popup and the welcome page, in OGame colours. */
+/* Shared look for the extension pages, in OGame's palette:
+   gold titles, steel menu buttons with yellow text, green action buttons. */
 :root {
-  --bg: #0d1117;
-  --panel: #161d27;
-  --border: #2c3a4b;
-  --text: #a9b3bd;
+  --bg: #0b0f15;
+  --panel: #151c25;
+  --border: #2a3644;
+  --text: #9ba5ae;
   --strong: #ffffff;
-  --accent: #8fd14f;
+  --accent: #e0aa3e;   /* panel titles ("Engineer") */
+  --menu-text: #f6d54a; /* menu buttons ("Shop", "Rewards") */
   --link: #6f9fd8;
   --ok: #99cc00;
+  --bad: #d43635;
 }
 * { box-sizing: border-box; }
 body {
@@ -16,28 +19,37 @@ body {
   color: var(--text);
   font: 13px/1.5 Verdana, Arial, sans-serif;
 }
-h1, h2 { color: var(--accent); margin: 0; }
+h1, h2 { color: var(--accent); margin: 0; text-shadow: 0 1px 2px #000; }
 a { color: var(--link); }
 .header { display: flex; align-items: center; gap: 12px; }
 .header img { width: 48px; height: 48px; flex: none; }
 .panel {
-  background: linear-gradient(#1b2430, var(--panel));
+  background: linear-gradient(#1d2631, var(--panel));
   border: 1px solid var(--border);
   border-radius: 6px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04), 0 0 0 1px #05080b;
   padding: 12px 14px;
 }
 ol { margin: 6px 0 0; padding-left: 20px; }
 ol li { margin: 2px 0; }
+/* Steel menu button with yellow text, like OGame's left menu */
+select, .menu-btn {
+  border: 1px solid #05080b;
+  border-radius: 5px;
+  background: linear-gradient(#4a5562 0%, #323c47 45%, #222a33 55%, #1a2028 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18), 0 1px 2px rgba(0, 0, 0, 0.6);
+  color: var(--menu-text);
+  font: bold 13px Verdana, Arial, sans-serif;
+  text-shadow: 0 1px 2px #000;
+  cursor: pointer;
+}
+select:hover, .menu-btn:hover { background: linear-gradient(#5a6674 0%, #3c4753 45%, #29323c 55%, #1f262f 100%); }
 select {
   width: 100%;
   margin-top: 4px;
-  padding: 5px 6px;
-  background: #0f151d;
-  color: var(--strong);
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  font: inherit;
+  padding: 6px 8px;
 }
+select option { background: #1a2028; color: var(--strong); font-weight: normal; }
 /* Copy of OGame's green build button ("Improve" / "In queue") */
 .support-btn {
   position: relative;

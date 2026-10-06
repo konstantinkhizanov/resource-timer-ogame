@@ -18,6 +18,7 @@ function renderWallets(t) {
     code.textContent = w.address;
     const copy = document.createElement('button');
     copy.type = 'button';
+    copy.className = 'menu-btn';
     copy.textContent = t.sCopy;
     copy.addEventListener('click', () => navigator.clipboard.writeText(w.address).then(() => {
       copy.textContent = t.sCopied;

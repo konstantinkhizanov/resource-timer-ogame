@@ -27,7 +27,7 @@
     .option .go { margin-left: auto; color: var(--accent); font-size: 20px; }
     .badge {
       font-size: 10px; font-weight: bold; text-transform: uppercase; letter-spacing: .5px;
-      color: #10260a; background: var(--accent); border-radius: 3px; padding: 1px 6px;
+      color: #1a1200; background: var(--menu-text); border-radius: 3px; padding: 1px 6px;
     }
     .kofi .icon { background: linear-gradient(#ffad33, #e07f00); }
     .paypal .icon { background: linear-gradient(#2a7fd4, #0b4a8f); }
@@ -35,7 +35,7 @@
     .crypto { flex-wrap: wrap; }
     .crypto .body { flex: 1; min-width: 0; }
     .wallet-row { margin-top: 10px; }
-    .wallet-row .coin { color: var(--strong); font-weight: bold; }
+    .wallet-row .coin { color: var(--menu-text); font-weight: bold; }
     .wallet-row .net { font-size: 11px; }
     .wallet { display: flex; gap: 8px; margin-top: 4px; }
     .wallet code {
@@ -43,12 +43,8 @@
       background: #0f151d; color: var(--strong); border: 1px solid var(--border);
       border-radius: 4px; padding: 6px 8px; font-size: 12px;
     }
-    .wallet button {
-      flex: none; cursor: pointer; font: inherit; font-size: 12px; font-weight: bold;
-      color: var(--strong); background: #24303e; border: 1px solid var(--border); border-radius: 4px; padding: 0 12px;
-    }
-    .wallet button:hover { border-color: var(--accent); }
-    .warn { color: #d9a441; }
+    .wallet .menu-btn { flex: none; padding: 0 12px; font-size: 12px; }
+    .warn { color: var(--bad); }
     [hidden] { display: none !important; }
   </style>
 </head>
