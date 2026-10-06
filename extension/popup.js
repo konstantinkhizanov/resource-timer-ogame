@@ -13,13 +13,15 @@ function fillLanguages(lang, saved) {
   select.value = saved || 'auto';
 }
 
+let gameLang = null;
+
 function show(saved) {
-  const lang = ogwUiLang(saved);
+  const lang = ogwUiLang(saved, gameLang);
   ogwTranslatePage(lang);
   fillLanguages(lang, saved);
 }
 
-chrome.storage.local.get('lang').then((v) => show(v.lang), () => show());
+chrome.storage.local.get(['lang', 'gameLang']).then((v) => { gameLang = v.gameLang; show(v.lang); }, () => show());
 
 select.addEventListener('change', () => {
   const value = select.value === 'auto' ? null : select.value;

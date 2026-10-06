@@ -12,6 +12,8 @@
     if (box) box.replaceChildren(); // force a re-render in the new language
   }
   chrome.storage.local.get('lang').then((v) => applyLang(v.lang), () => {});
+  // Remember the game's language so the extension's own pages can match it.
+  chrome.storage.local.set({ gameLang: ogwDetectLang() }).catch(() => {});
   chrome.storage.onChanged.addListener((changes) => { if (changes.lang) applyLang(changes.lang.newValue); });
 
   // Inject the page-context script so we can read OGame's resourcesBar.

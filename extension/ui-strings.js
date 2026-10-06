@@ -20,9 +20,11 @@ var OGW_UI = {
   hr: { tagline: 'Pokazuje koliko treba dok tvoj planet ne skupi dovoljno resursa za gradnju.', howTitle: 'Kako koristiti', how1: 'Otvori u OGameu bilo koju zgradu, istraživanje, brod ili obranu.', how2: 'Ispod informacija o gradnji vidjet ćeš kada će resursi biti spremni.', how3: 'Prijeđi mišem preko ikone ? za detaljan prikaz.', lang: 'Jezik', auto: 'Automatski (jezik igre)', support: 'Podrži autora', supportNote: 'Resource Timer je besplatan. Ako ti štedi vrijeme, možeš me častiti kavom ☕', welcome: 'Hvala što si instalirao Resource Timer!', story: 'Napravio sam ga za sebe i OGame je postao puno bolji otkad uvijek *točno* znam kada mogu sljedeće graditi. Nadam se da će pomoći i tebi.', unofficial: 'Neslužbeni projekt obožavatelja. Nije povezan s Gameforgeom.' }
 };
 
-// Language for extension pages: the user's choice, else the browser language.
-function ogwUiLang(override) {
+// Language for extension pages: the user's choice, else the language of the
+// OGame server last visited, else the browser language.
+function ogwUiLang(override, gameLang) {
   if (override && OGW_UI[override]) return override;
+  if (gameLang && OGW_UI[gameLang]) return gameLang;
   var c = (navigator.language || 'en').toLowerCase().slice(0, 2);
   c = OGW_LANG_ALIASES[c] || c;
   return OGW_UI[c] ? c : 'en';

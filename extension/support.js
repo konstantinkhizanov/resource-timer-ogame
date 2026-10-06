@@ -42,8 +42,8 @@ function renderWallets(t) {
   }));
 }
 
-chrome.storage.local.get('lang').then((v) => v.lang, () => null).then((saved) => {
-  const lang = ogwUiLang(saved);
+chrome.storage.local.get(['lang', 'gameLang']).then((v) => v, () => ({})).then((v) => {
+  const lang = ogwUiLang(v.lang, v.gameLang);
   ogwTranslatePage(lang);
   document.title = OGW_UI[lang].sTitle;
 
